@@ -1,80 +1,85 @@
-# Garasi Notebook
+# Garasi Notebook - Fullstack App
 
-Ini adalah aplikasi fullstack yang memberikan layanan service center untuk perbaikan dan perawatan perangkat notebook. Aplikasi ini menggunakan teknologi modern pada frontend dan backend untuk memberikan pengalaman pengguna yang optimal.
+Garasi Notebook adalah aplikasi fullstack yang dirancang untuk memudahkan manajemen dan layanan pelanggan terkait perbaikan dan pemeliharaan notebook. Aplikasi ini dibangun dengan teknologi modern di sisi frontend dan backend.
 
-## Teknologi yang Digunakan
+### Teknologi Utama
 
-### Frontend
+- Vue 3: _Progressive JavaScript Framework_
+- Tailwind CSS: _A utility-first CSS framework_
+- DaisyUI: _Component Library for Tailwind CSS_
 
-- **Vue 3:** Sebuah framework JavaScript yang powerful untuk membangun antarmuka pengguna.
-- **Tailwind CSS:** Sebuah framework CSS yang sangat customizable dan utility-first.
-- **DaisyUI:** Komponen UI tambahan untuk Tailwind CSS.
+### Instalasi dan Penggunaan
 
-### Backend
-
-- **JavaScript:** Bahasa pemrograman utama untuk logika backend.
-- **Express:** Framework Node.js yang minimal dan fleksibel untuk membangun aplikasi web.
-- **MySQL:** Sistem manajemen basis data relasional yang digunakan untuk menyimpan data aplikasi.
-- **Sequelize:** ORM (Object-Relational Mapping) untuk Node.js yang kompatibel dengan MySQL dan menyederhanakan interaksi dengan database.
-
-## Cara Menjalankan Aplikasi
-
-### Persiapan
-
-1. Pastikan Node.js dan npm terinstal di sistem Anda.
-2. Pastikan MySQL server telah terinstal dan berjalan.
-
-### Instalasi
-
-1. Clone repositori ini ke dalam direktori lokal:
+1. **Clone repositori ini:**
 
     ```bash
-    git clone https://github.com/pixelwhiz/garasinotebook.git
+    git clone https://github.com/namarepo/garasi-notebook-frontend.git
+    cd garasi-notebook-frontend
     ```
 
-2. Masuk ke direktori proyek:
+2. **Install dependensi:**
 
     ```bash
-    cd garasi-notebook-service-center
-    ```
-
-3. Instal dependensi frontend:
-
-    ```bash
-    cd frontend
     npm install
     ```
 
-4. Instal dependensi backend:
+3. **Jalankan server pengembangan:**
 
     ```bash
-    cd ../backend
-    npm install
-    ```
-
-### Konfigurasi Database
-
-1. Buat database MySQL untuk aplikasi ini.
-2. Salin file `.env.example` menjadi `.env` di dalam direktori `backend` dan atur konfigurasi database sesuai dengan pengaturan MySQL Anda.
-
-### Menjalankan Aplikasi
-
-1. Jalankan backend:
-
-    ```bash
-    cd backend
-    npm start
-    ```
-
-2. Jalankan frontend:
-
-    ```bash
-    cd ../frontend
     npm run dev
     ```
 
-Aplikasi akan diakses pada `http://localhost:5173/` secara default.
+    Frontend akan berjalan di `http://localhost:5173/`.
+
+## Backend
+
+### Teknologi Utama
+- ExpressJS: _Fast, unopinionated, minimalist web framework for Node.js_
+- MySQL: _Relational Database Management System_
+- Sequelize: _Promise-based Node.js ORM_
+
+### Instalasi dan Penggunaan
+
+1. **Clone repositori ini:**
+
+    ```bash
+    git clone https://github.com/pixelwhiz/garasinotebook.git
+    cd garasinotebook/backend
+    ```
+
+2. **Install dependensi:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Konfigurasi database:**
+
+    Edit file `config/db.config.js` sesuai dengan pengaturan database MySQL Anda.
+
+4. **Jalankan migrasi database:**
+
+    ```bash
+    npm run migrate
+    ```
+
+5. **Jalankan server:**
+
+    ```bash
+    npm start
+    ```
+
+    Backend akan berjalan di `http://localhost:3000/`.
+
+## Lingkungan Pengembangan
+
+- Node.js v14.x atau versi terbaru.
+- MySQL server.
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada proyek ini, silakan buat _fork_ dan kirim _pull request_. Pastikan untuk mengikuti pedoman kontribusi yang ada.
 
 ## Lisensi
 
-[MIT License](LICENSE.md)
+Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE.md](LICENSE.md) untuk detailnya.
