@@ -1,89 +1,87 @@
-# Garasi Notebook - Fullstack App
+# Garasi Notebook Service Center
 
-Garasi Notebook adalah aplikasi yang dirancang untuk memudahkan manajemen dan layanan pelanggan terkait perbaikan dan pemeliharaan Laptop / PC. Aplikasi ini dibangun dengan teknologi modern di sisi frontend dan backend.
+Garasi Notebook Service Center adalah aplikasi fullstack yang memberikan layanan service center untuk perbaikan dan perawatan perangkat notebook. Aplikasi ini menggunakan teknologi modern pada frontend dan backend untuk memberikan pengalaman pengguna yang optimal.
 
-## Frontend
+## Teknologi yang Digunakan
 
-### Teknologi Utama
+### Frontend
 
-- Vue 3: _Progressive JavaScript Framework_
-- Tailwind CSS: _A utility-first CSS framework_
-- DaisyUI: _Component Library for Tailwind CSS_
+- **Vue 3:** Sebuah framework JavaScript yang powerful untuk membangun antarmuka pengguna.
+- **Tailwind CSS:** Sebuah framework CSS yang sangat customizable dan utility-first.
+- **DaisyUI:** Komponen UI tambahan untuk Tailwind CSS.
 
-### Instalasi dan Penggunaan
+### Backend
 
-1. **Clone repositori ini:**
+- **JavaScript:** Bahasa pemrograman utama untuk logika backend.
+- **Express:** Framework Node.js yang minimal dan fleksibel untuk membangun aplikasi web.
+- **MySQL:** Sistem manajemen basis data relasional yang digunakan untuk menyimpan data aplikasi.
+- **Sequelize:** ORM (Object-Relational Mapping) untuk Node.js yang kompatibel dengan MySQL dan menyederhanakan interaksi dengan database.
+
+## Fitur Aplikasi
+
+- **Manajemen Perangkat:** Daftarkan perangkat notebook, pantau status perbaikan, dan lakukan pelacakan inventaris.
+- **Pengajuan Perbaikan Online:** Pengguna dapat mengajukan perbaikan perangkat secara online dengan mengisi formulir pengajuan perbaikan.
+- **Pantau Status Perbaikan:** Pengguna dapat melihat status perbaikan perangkat mereka secara real-time.
+- **Histori Perbaikan:** Lihat histori perbaikan perangkat untuk referensi dan analisis.
+
+## Cara Menjalankan Aplikasi
+
+### Persiapan
+
+1. Pastikan Node.js dan npm terinstal di sistem Anda.
+2. Pastikan MySQL server telah terinstal dan berjalan.
+
+### Instalasi
+
+1. Clone repositori ini ke dalam direktori lokal:
 
     ```bash
-    git clone https://github.com/namarepo/garasi-notebook-frontend.git
-    cd garasi-notebook-frontend
+    git clone https://github.com/namareq/garasi-notebook-service-center.git
     ```
 
-2. **Install dependensi:**
+2. Masuk ke direktori proyek:
 
     ```bash
+    cd garasi-notebook-service-center
+    ```
+
+3. Instal dependensi frontend:
+
+    ```bash
+    cd frontend
     npm install
     ```
 
-3. **Jalankan server pengembangan:**
+4. Instal dependensi backend:
 
     ```bash
-    npm run serve
-    ```
-
-    Frontend akan berjalan di `http://localhost:5173/`.
-
-## Backend
-
-### Teknologi Utama
-
-- TypeScript: _Typed superset of JavaScript_
-- Express: _Fast, unopinionated, minimalist web framework for Node.js_
-- MySQL: _Relational Database Management System_
-- Sequelize: _Promise-based Node.js ORM_
-
-### Instalasi dan Penggunaan
-
-1. **Clone repositori ini:**
-
-    ```bash
-    git clone https://github.com/namarepo/garasi-notebook-backend.git
-    cd garasi-notebook-backend
-    ```
-
-2. **Install dependensi:**
-
-    ```bash
+    cd ../backend
     npm install
     ```
 
-3. **Konfigurasi database:**
+### Konfigurasi Database
 
-    Edit file `config/db.config.js` sesuai dengan pengaturan database MySQL Anda.
+1. Buat database MySQL untuk aplikasi ini.
+2. Salin file `.env.example` menjadi `.env` di dalam direktori `backend` dan atur konfigurasi database sesuai dengan pengaturan MySQL Anda.
 
-4. **Jalankan migrasi database:**
+### Menjalankan Aplikasi
 
-    ```bash
-    npm run migrate
-    ```
-
-5. **Jalankan server:**
+1. Jalankan backend:
 
     ```bash
+    cd backend
     npm start
     ```
 
-    Backend akan berjalan di `http://localhost:3000/`.
+2. Jalankan frontend:
 
-## Lingkungan Pengembangan
+    ```bash
+    cd ../frontend
+    npm run serve
+    ```
 
-- Node.js v14.x atau versi terbaru.
-- MySQL server.
-
-## Kontribusi
-
-Jika Anda ingin berkontribusi pada proyek ini, silakan buat _fork_ dan kirim _pull request_. Pastikan untuk mengikuti pedoman kontribusi yang ada.
+Aplikasi akan diakses pada `http://localhost:8080/` secara default.
 
 ## Lisensi
 
-Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE.md](LICENSE.md) untuk detailnya.
+[MIT License](LICENSE.md)
