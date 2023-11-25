@@ -1,6 +1,6 @@
-# Garasi Notebook Service Center
+# Garasi Notebook App
 
-Garasi Notebook Service Center adalah aplikasi fullstack yang memberikan layanan service center untuk perbaikan dan perawatan perangkat notebook. Aplikasi ini menggunakan teknologi modern pada frontend dan backend untuk memberikan pengalaman pengguna yang optimal.
+Ini adalah aplikasi fullstack yang memberikan layanan service center untuk perbaikan dan perawatan perangkat notebook. Aplikasi ini menggunakan teknologi modern pada frontend dan backend untuk memberikan pengalaman pengguna yang optimal.
 
 ## Teknologi yang Digunakan
 
@@ -17,13 +17,6 @@ Garasi Notebook Service Center adalah aplikasi fullstack yang memberikan layanan
 - **MySQL:** Sistem manajemen basis data relasional yang digunakan untuk menyimpan data aplikasi.
 - **Sequelize:** ORM (Object-Relational Mapping) untuk Node.js yang kompatibel dengan MySQL dan menyederhanakan interaksi dengan database.
 
-## Fitur Aplikasi
-
-- **Manajemen Perangkat:** Daftarkan perangkat notebook, pantau status perbaikan, dan lakukan pelacakan inventaris.
-- **Pengajuan Perbaikan Online:** Pengguna dapat mengajukan perbaikan perangkat secara online dengan mengisi formulir pengajuan perbaikan.
-- **Pantau Status Perbaikan:** Pengguna dapat melihat status perbaikan perangkat mereka secara real-time.
-- **Histori Perbaikan:** Lihat histori perbaikan perangkat untuk referensi dan analisis.
-
 ## Cara Menjalankan Aplikasi
 
 ### Persiapan
@@ -36,7 +29,7 @@ Garasi Notebook Service Center adalah aplikasi fullstack yang memberikan layanan
 1. Clone repositori ini ke dalam direktori lokal:
 
     ```bash
-    git clone https://github.com/namareq/garasi-notebook-service-center.git
+    git clone https://github.com/pixelwhiz/garasinotebook.git
     ```
 
 2. Masuk ke direktori proyek:
@@ -77,10 +70,10 @@ Garasi Notebook Service Center adalah aplikasi fullstack yang memberikan layanan
 
     ```bash
     cd ../frontend
-    npm run serve
+    npm run dev
     ```
 
-Aplikasi akan diakses pada `http://localhost:8080/` secara default.
+Aplikasi akan diakses pada `http://localhost:5173/` secara default.
 
 ## Lisensi
 
