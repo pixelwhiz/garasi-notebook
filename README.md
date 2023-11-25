@@ -31,7 +31,7 @@ Garasi Notebook adalah aplikasi yang dirancang untuk memudahkan manajemen dan la
     npm run serve
     ```
 
-    Frontend akan berjalan di `http://localhost:8080/`.
+    Frontend akan berjalan di `http://localhost:5173/`.
 
 ## Backend
 
