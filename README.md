@@ -1,4 +1,4 @@
-# Garasi Notebook App
+# Garasi Notebook
 
 Ini adalah aplikasi fullstack yang memberikan layanan service center untuk perbaikan dan perawatan perangkat notebook. Aplikasi ini menggunakan teknologi modern pada frontend dan backend untuk memberikan pengalaman pengguna yang optimal.
 
