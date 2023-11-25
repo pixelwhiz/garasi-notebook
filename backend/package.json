@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node Index.ts",
+    "start": "node Index.js",
     "build": "tsc",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
   "keywords": [],
   "author": "",
@@ -20,9 +21,10 @@
     "express-session": "^1.17.3",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.5",
     "nodemon": "^2.0.14",
     "passport": "^0.6.0",
-    "sequelize-typescript": "^2.1.6"
+    "sequelize": "^6.35.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
