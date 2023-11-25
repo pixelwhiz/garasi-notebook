@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <label>qpwiepoqiwepqpiwepqpwe</label>
 </template>
 
 <style scoped>

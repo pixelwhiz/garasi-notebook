@@ -4,8 +4,8 @@
       <label>PLANET IT CENTER</label>
     </div>
     <div class="card xl:mx-96 lg:mx-60 md:mx-24 mx-0 card-sider">
-      <div class="card-body  xl:px-10 lg:px-10 md:px-10 px-5 shadow-lg py-10 my-10 bg-base-100" style="border-radius: 0rem;">
-        <div class="form  -control w-full">
+      <div class="card-body xl:px-10 lg:px-10 md:px-10 px-5 shadow-lg py-10 my-10 bg-base-100" style="border-radius: 0rem;">
+        <div class="form-control w-full">
           <label class="label-text label uppercase font-extralight">Email address</label>
           <div class="flex">
             <input type="text" placeholder="" class="input input-md font-bold text-base-content/100 bg-base-300 w-full" />

@@ -1,7 +1,20 @@
+<script>
+import Navbar from "../../components/client/Navbar.vue";
+import Hero from "../../components/client/Hero.vue";
+import Footer from "../../components/client/Footer.vue";
+
+export default {
+  name: "Home",
+  components: {Footer, Hero, Navbar}
+}
+</script>
+
 <template>
-  <label>Home</label>
+  <Navbar />
+  <Hero />
+  <Footer />
 </template>
 
-<script setup>
+<style scoped>
 
-</script>
+</style>
