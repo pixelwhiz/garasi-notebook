@@ -13,8 +13,8 @@ Garasi Notebook adalah aplikasi fullstack yang dirancang untuk memudahkan manaje
 1. **Clone repositori ini:**
 
     ```bash
-    git clone https://github.com/namarepo/garasi-notebook-frontend.git
-    cd garasi-notebook-frontend
+    git clone https://github.com/pixelwhiz/garasinotebook.git
+    cd garasinotebook/frontend
     ```
 
 2. **Install dependensi:**
