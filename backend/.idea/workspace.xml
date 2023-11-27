@@ -5,348 +5,361 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc8d0fda-aee7-46a7-b675-13f9b85fb213" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/models/Index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/ProductController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/CategoryModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/ImageModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/AdminRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/CategoryRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/Index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ProductModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/ProductModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/CategoryController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/ProductController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/AdminController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/CategoryModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/CategoryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ProductModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ProductModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs.realpath/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs.realpath/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs.realpath/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs.realpath/old.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs.realpath/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/glob/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/glob/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/glob/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/glob/glob.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/glob/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/glob/sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/inflight/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/inflight/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/inflight/inflight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/inflight/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/once/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/once/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/once/once.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/once/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-is-absolute/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-is-absolute/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-is-absolute/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-is-absolute/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/AUTHORS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/CopyrightNotice.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/Reflect.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/Reflect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/docs/ecmarkup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/docs/ecmarkup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/docs/spec.biblio.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/reflect-metadata.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/standalone.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/reflect-metadata/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.commitlintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.github/dependabot.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.github/workflows/commitlint.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.github/workflows/nodejs.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.github/workflows/npm-publish.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.husky/commit-msg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.husky/pre-commit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.markdownlint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.mocharc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/.prettierrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/alias-inference/alias-inference-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/alias-inference/alias-inference-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to-many/belongs-to-many-association.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to-many/belongs-to-many-association.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to-many/belongs-to-many-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to-many/belongs-to-many-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to-many/belongs-to-many.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to-many/belongs-to-many.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to/belongs-to-association.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to/belongs-to-association.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to/belongs-to.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/belongs-to/belongs-to.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/foreign-key/foreign-key-meta.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/foreign-key/foreign-key-meta.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/foreign-key/foreign-key-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/foreign-key/foreign-key-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/foreign-key/foreign-key.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/foreign-key/foreign-key.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/has/has-association.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/has/has-association.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/has/has-many.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/has/has-many.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/has/has-one.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/has/has-one.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/shared/association-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/shared/association-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/shared/association.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/shared/association.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/shared/base-association.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/shared/base-association.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/shared/union-association-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/shared/union-association-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/through/through-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/associations/through/through-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/browser/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/browser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-create.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-destroy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-destroy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-restore.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-restore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-sync.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-update.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/after/after-bulk-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-create.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-destroy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-destroy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-restore.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-restore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-sync.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-update.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/bulk/before/before-bulk-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/shared/hook-meta.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/shared/hook-meta.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/shared/hook-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/shared/hook-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/shared/hooks-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/shared/hooks-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/shared/validation-failed.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/shared/validation-failed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-connect.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-connect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-create.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-define.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-define.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-destroy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-destroy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-find.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-find.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-init.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-restore.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-restore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-save.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-save.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-sync.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-update.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-upsert.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-upsert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-validate.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/after/after-validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-connect.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-connect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-count.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-count.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-create.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-define.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-define.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-destroy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-destroy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-find-after-expand-include-all.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-find-after-expand-include-all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-find-after-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-find-after-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-find.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-find.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-init.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-restore.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-restore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-save.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-save.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-sync.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-update.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-upsert.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-upsert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-validate.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/hooks/single/before/before-validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/attribute-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/attribute-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column-options/allow-null.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column-options/allow-null.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column-options/comment.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column-options/comment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column-options/default.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column-options/default.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column-options/unique.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column-options/unique.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/column.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/primary-key/auto-increment.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/primary-key/auto-increment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/primary-key/primary-key.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/primary-key/primary-key.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/timestamps/created-at.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/timestamps/created-at.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/timestamps/deleted-at.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/timestamps/deleted-at.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/timestamps/updated-at.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/column/timestamps/updated-at.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/index/create-index-decorator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/index/create-index-decorator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/index/index-decorator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/index/index-decorator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/index/index-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/index/index-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/association/association-action-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/association/association-action-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/association/association-count-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/association/association-count-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/association/association-create-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/association/association-create-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/association/association-get-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/association/association-get-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/model.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/model/model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/shared/model-class-getter.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/shared/model-class-getter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/shared/model-not-initialized-error.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/shared/model-not-initialized-error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/shared/model-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/shared/model-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/table/table-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/table/table-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/table/table.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/model/table/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/default-scope.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/default-scope.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scope-find-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scope-find-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scope-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scope-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scope-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scope-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scope-table-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scope-table-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scopes.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/scopes/scopes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/data-type/data-type-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/data-type/data-type-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/data-type/data-type.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/data-type/data-type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/repository/repository.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/repository/repository.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/sequelize/sequelize-options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/sequelize/sequelize-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/sequelize/sequelize-service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/sequelize/sequelize-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/sequelize/sequelize.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/sequelize/sequelize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/validation-only/db-dialect-dummy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/sequelize/validation-only/db-dialect-dummy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/shared/array.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/shared/array.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/shared/object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/shared/object.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/shared/string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/shared/string.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/shared/types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/shared/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/contains.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/contains.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/equals.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/equals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-after.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-after.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-alpha.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-alpha.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-alphanumeric.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-alphanumeric.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-array.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-array.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-before.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-before.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-credit-card.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-credit-card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-date.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-date.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-decimal.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-decimal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-email.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-email.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-float.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-float.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-in.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-in.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-int.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-int.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-ip-v4.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-ip-v4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-ip-v6.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-ip-v6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-ip.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-ip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-lowercase.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-lowercase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-null.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-null.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-numeric.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-numeric.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-uppercase.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-uppercase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-url.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-uuid.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is-uuid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/length.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/length.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/max.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/max.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/min.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not-contains.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not-contains.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not-empty.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not-empty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not-in.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not-in.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not-null.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not-null.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/not.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/validate.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/validator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/dist/validation/validator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize-typescript/renovate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/wrappy/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/wrappy/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/wrappy/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/wrappy/wrappy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/md5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/md5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/rng.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/rng.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/sha1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/sha1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v3.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v35.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v35.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v35.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v35.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/rng-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/rng-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuid.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidNIL.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidParse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidStringify.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidValidate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidVersion.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/v1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/v35.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/v35.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/v4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uuid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/Index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/ProductRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/router/ProductRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/activity.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/airplay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/alert-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/alert-octagon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/alert-triangle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/align-center.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/align-justify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/align-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/align-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/anchor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/aperture.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/archive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-down-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-down-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-down-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-left-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-right-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-up-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-up-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-up-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/at-sign.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/award.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bar-chart-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bar-chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/battery-charging.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bell-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bell.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bluetooth.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bold.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/book-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/book.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bookmark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/box.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/briefcase.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/camera-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cast.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/check-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/check-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevron-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevron-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevron-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevron-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevrons-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevrons-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevrons-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevrons-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chrome.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/clipboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-drizzle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-lightning.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-rain.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-snow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/code.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/codepen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/codesandbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/coffee.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/columns.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/command.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/compass.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/copy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-down-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-down-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-left-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-left-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-right-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-right-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-up-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-up-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cpu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/credit-card.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/crop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/crosshair.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/database.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/disc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/divide-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/divide-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/divide.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/dollar-sign.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/download-cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/dribbble.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/droplet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/edit-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/edit-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/edit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/external-link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/eye-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/eye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/fast-forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/feather.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/figma.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/file-minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/file-plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/file-text.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/film.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/filter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/flag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/folder-minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/folder-plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/folder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/framer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/frown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/gift.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/git-branch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/git-commit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/git-merge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/git-pull-request.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/gitlab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/hard-drive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/hash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/headphones.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/help-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/hexagon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/inbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/info.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/key.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/layers.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/layout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/life-buoy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/link-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/loader.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/lock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/log-in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/log-out.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/mail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/map-pin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/maximize-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/maximize.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/meh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/message-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/message-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/mic-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/mic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minimize-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minimize.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minus-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minus-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/monitor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/moon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/more-horizontal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/more-vertical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/mouse-pointer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/move.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/music.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/navigation-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/navigation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/octagon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/package.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/paperclip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pause-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pause.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pen-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/percent.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-call.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-forwarded.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-incoming.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-missed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-outgoing.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pie-chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/play-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/play.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/plus-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/plus-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pocket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/power.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/printer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/radio.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/refresh-ccw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/refresh-cw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/repeat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/rewind.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/rotate-ccw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/rotate-cw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/rss.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/save.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/scissors.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/send.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/server.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/settings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/share-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/share.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shield-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shield.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shopping-bag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shopping-cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shuffle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sidebar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/skip-back.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/skip-forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/slack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/slash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sliders.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/smartphone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/smile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/speaker.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/stop-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sun.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sunrise.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sunset.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/table.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/tablet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/tag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/target.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/terminal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/thermometer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/thumbs-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/thumbs-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/toggle-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/toggle-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trash-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trending-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trending-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/triangle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/truck.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/tv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/twitch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/type.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/umbrella.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/underline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/unlock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/upload-cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/upload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user-minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user-plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user-x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/users.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/video-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/video.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/voicemail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/volume-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/volume-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/volume-x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/volume.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/watch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/wifi-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/wifi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/wind.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/x-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/x-octagon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/x-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/zap-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/zap.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/zoom-in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/zoom-out.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductLayout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/admin/Authentication.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/admin/Authentication.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,8 +369,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -407,6 +420,7 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
+      "redshift",
       "mysql"
     ]
   }
@@ -445,6 +459,12 @@
       <workItem from="1700891705745" duration="3975000" />
       <workItem from="1700923517851" duration="601000" />
       <workItem from="1700924181102" duration="13812000" />
+      <workItem from="1700941476868" duration="671000" />
+      <workItem from="1700967910305" duration="9036000" />
+      <workItem from="1700980443842" duration="10591000" />
+      <workItem from="1701052996771" duration="9861000" />
+      <workItem from="1701066870194" duration="1380000" />
+      <workItem from="1701068319453" duration="3842000" />
     </task>
     <servers />
   </component>

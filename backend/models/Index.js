@@ -21,6 +21,7 @@ db.sequelize = sequelize;
 
 sequelize.sync();
 
-db.user = require("./ProductModel")(sequelize, Sequelize);
+db.product = require("./ProductModel")(sequelize, Sequelize);
+db.category = require("./CategoryModel")(sequelize, Sequelize);
 
 module.exports = db;

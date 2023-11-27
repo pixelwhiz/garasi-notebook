@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node Index.js",
+    "start": "nodemon Index.js",
     "build": "tsc",
     "watch": "tsc --watch",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
@@ -24,7 +24,8 @@
     "mysql2": "^3.6.5",
     "nodemon": "^2.0.14",
     "passport": "^0.6.0",
-    "sequelize": "^6.35.1"
+    "sequelize": "^6.35.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",

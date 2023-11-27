@@ -1,13 +1,3 @@
-<script>
-import {Dialog} from "@headlessui/vue";
-
-export default {
-  name: "Product",
-  components: {Dialog},
-}
-
-</script>
-
 <template>
   <div class="ms-3 flex my-5 justify-between">
     <label class="product text-white flex gap-3">
@@ -29,7 +19,7 @@ export default {
     <div class="flex justify-between">
       <label class="font-bold">Manage Category</label>
       <div class="flex -mt-2 translate-y-1 gap-5">
-        <button onclick="createCategory.showModal()" class="btn bg-success/75 normal-case text-white font-normal border-0 btn-sm hover:bg-success/75" style="border-radius: 0rem;">
+        <button @click="createCategoryForm" class="btn bg-success/75 normal-case text-white font-normal border-0 btn-sm hover:bg-success/75" style="border-radius: 0rem;">
           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" fill="white"/></svg>
           Add New Category
         </button>
@@ -90,12 +80,12 @@ export default {
         <svg class="mt-1.5" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 480H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H288c-10.1 0-19.6-4.7-25.6-12.8L243.2 57.6C231.1 41.5 212.1 32 192 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64z" fill="white"/></svg>
         Create New Category</label>
       <p class="py-4">Category must be 6 - 12 Characters</p>
-      <input type="text" placeholder="Type Here" class="input bg-transparent text-base-content/100 input-bordered w-full" />
+      <input v-model="category_new_name" type="text" placeholder="Type Here" class="input bg-transparent text-base-content/100 input-bordered w-full" />
       <div class="modal-action">
         <form method="dialog">
           <div class="flex gap-3">
             <button class="btn bg-base-content/10 border-0 hover:bg-base-content/10 normal-case text-white">Cancel</button>
-            <button class="btn bg-success/75 border-0 text-base-100/100 hover:bg-success/75 normal-case">Create Category</button>
+            <button @click="createCategory" class="btn bg-success/75 border-0 text-base-100/100 hover:bg-success/75 normal-case">Create Category</button>
           </div>
         </form>
       </div>
@@ -148,3 +138,48 @@ table {
 }
 
 </style>
+
+<script>
+import {Dialog} from "@headlessui/vue";
+import Config from "../../../config.js";
+import axios from "axios";
+import { v4 as uuidv4 } from "uuid";
+
+export default {
+  name: "Product",
+  components: {Dialog},
+
+  data() {
+    return {
+      category_new_name: "",
+    }
+  },
+
+  methods: {
+    createCategoryForm() {
+      document.getElementById("createCategory").showModal();
+      this.category_new_name = "";
+    },
+
+    async createCategory() {
+      try {
+        const response = await axios.post(Config.POST_CREATE_NEW_CATEGORY, {
+          id: uuidv4(),
+          name: this.category_new_name,
+        });
+
+        if (response.status === 200) {
+          alert("success membuat category");
+        } else {
+          alert(response.data.message);
+        }
+
+      } catch (err) {
+        console.log("Internal Server Error: ", err);
+        alert(err.message);
+      }
+    },
+  }
+}
+
+</script>
