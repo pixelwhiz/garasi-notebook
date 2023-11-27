@@ -1,8 +1,6 @@
 # Garasi Notebook - Fullstack App
 
-Garasi Notebook adalah aplikasi yang dirancang untuk memudahkan manajemen dan layanan pelanggan terkait perbaikan dan pemeliharaan Laptop / PC. Aplikasi ini dibangun dengan teknologi modern di sisi frontend dan backend.
-
-## Frontend
+Garasi Notebook adalah aplikasi fullstack yang dirancang untuk memudahkan manajemen dan layanan pelanggan terkait perbaikan dan pemeliharaan notebook. Aplikasi ini dibangun dengan teknologi modern di sisi frontend dan backend.
 
 ### Teknologi Utama
 
@@ -15,8 +13,8 @@ Garasi Notebook adalah aplikasi yang dirancang untuk memudahkan manajemen dan la
 1. **Clone repositori ini:**
 
     ```bash
-    git clone https://github.com/namarepo/garasi-notebook-frontend.git
-    cd garasi-notebook-frontend
+    git clone https://github.com/pixelwhiz/garasinotebook.git
+    cd garasinotebook/frontend
     ```
 
 2. **Install dependensi:**
@@ -28,7 +26,7 @@ Garasi Notebook adalah aplikasi yang dirancang untuk memudahkan manajemen dan la
 3. **Jalankan server pengembangan:**
 
     ```bash
-    npm run serve
+    npm run dev
     ```
 
     Frontend akan berjalan di `http://localhost:5173/`.
@@ -36,9 +34,7 @@ Garasi Notebook adalah aplikasi yang dirancang untuk memudahkan manajemen dan la
 ## Backend
 
 ### Teknologi Utama
-
-- TypeScript: _Typed superset of JavaScript_
-- Express: _Fast, unopinionated, minimalist web framework for Node.js_
+- ExpressJS: _Fast, unopinionated, minimalist web framework for Node.js_
 - MySQL: _Relational Database Management System_
 - Sequelize: _Promise-based Node.js ORM_
 
@@ -47,8 +43,8 @@ Garasi Notebook adalah aplikasi yang dirancang untuk memudahkan manajemen dan la
 1. **Clone repositori ini:**
 
     ```bash
-    git clone https://github.com/namarepo/garasi-notebook-backend.git
-    cd garasi-notebook-backend
+    git clone https://github.com/pixelwhiz/garasinotebook.git
+    cd garasinotebook/backend
     ```
 
 2. **Install dependensi:**
