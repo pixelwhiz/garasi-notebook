@@ -9,9 +9,9 @@ export default {
     <div class="hero-content flex-col px-10 lg:flex-row-reverse">
       <img src="../../assets/img/logo_rog.png" class="max-w-sm rounded-lg shadow-2xl " />
       <div class="me-72">
-        <h1 class="text-5xl font-bold">Garasi Notebook</h1>
+        <h1 class="text-5xl font-bold text-white">Garasi Notebook</h1>
         <p class="py-6">Kami adalah penyedia layanan lengkap untuk perbaikan dan pemeliharaan laptop, penjualan spare part berkualitas, dan solusi perangkat lunak terkini. Dengan tim ahli yang berpengalaman, kami siap membantu Anda mengatasi semua kebutuhan komputer Anda.</p>
-        <button class="btn btn-success">Get Started</button>
+        <button class="btn bg-success/75 hover:bg-success/75 text-white">Get Started</button>
       </div>
     </div>
   </div>
@@ -33,6 +33,10 @@ h1 {
   font-weight: bold;
 }
 
+button {
+  border-radius: 0rem;
+}
+
 p {
   font-family: 'Sora', sans-serif;
   font-weight: normal;
@@ -40,7 +44,6 @@ p {
 
 button {
   font-family: 'Sora', sans-serif;
-  font-weight: bold;
 }
 
 </style>

@@ -18,7 +18,6 @@ exports.addVisitor = async (req, res) => {
     }
 };
 
-
 exports.addOrder = async (req, res) => {
     try {
         const { data } = req.body;

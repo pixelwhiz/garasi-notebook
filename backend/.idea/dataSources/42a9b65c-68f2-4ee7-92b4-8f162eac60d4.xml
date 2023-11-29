@@ -1006,8 +1006,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="292" parent="1" name="garasinotebook">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-11-29.08:53:19</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-28.18:53:19</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-29.21:22:01</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-29.07:22:01</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="293" parent="1" name="mysql.infoschema">
@@ -1121,32 +1121,37 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="316" parent="299" name="description">
+    <column id="316" parent="299" name="price">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="317" parent="299" name="category">
+    <column id="317" parent="299" name="description">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="318" parent="299" name="createdAt">
-      <DasType>datetime|0s</DasType>
+    <column id="318" parent="299" name="category">
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="319" parent="299" name="updatedAt">
+    <column id="319" parent="299" name="createdAt">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="320" parent="299" name="PRIMARY">
+    <column id="320" parent="299" name="updatedAt">
+      <DasType>datetime|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <index id="321" parent="299" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="321" parent="299" name="PRIMARY">
+    <key id="322" parent="299" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

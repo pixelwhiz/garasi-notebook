@@ -17,7 +17,7 @@ import Store from "../store/index.js";
 const routes = [
     { path: '/', component: ClientHome },
     { path: '/p/:categoryId', component: ItemList },
-    { path: '/p/:categoryId/:productId', component: Item },
+    { path: '/p/:categoryId/q/:productId', component: Item },
 
     { path: '/admin/login', component: AdminLogin, meta: { authAdmin: false } },
     { path: '/admin/dashboard', component: Dashboard, meta: { authAdmin: true } },

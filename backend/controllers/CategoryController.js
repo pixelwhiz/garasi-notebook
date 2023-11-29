@@ -125,9 +125,7 @@ exports.getNameById = async (req, res) => {
             },
         });
 
-        console.log(existingCategory.name);
-
-        return res.status(200).send({ status: true, categoryName: "qwe" });
+        return res.status(200).send({ status: true, name: existingCategory.name });
 
     } catch (err) {
         console.log("Internal Server Error: ", err.message);

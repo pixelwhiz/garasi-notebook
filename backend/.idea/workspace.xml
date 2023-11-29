@@ -5,59 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc8d0fda-aee7-46a7-b675-13f9b85fb213" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/DashboardController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/DashboardModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/DashboardRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductCreateLayout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductEditLayout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductSetupLayout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/views/admin/ProductCreate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/views/admin/ProductEdit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/views/client/Item.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/views/client/ItemList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/android-chrome-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/android-chrome-maskable-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/android-chrome-maskable-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/apple-touch-icon-120x120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/apple-touch-icon-152x152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/apple-touch-icon-180x180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/apple-touch-icon-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/apple-touch-icon-76x76.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/msapplication-icon-144x144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/mstile-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/img/icons/safari-pinned-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/client/layouts/ItemLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/client/layouts/ItemListLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/registerServiceWorker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/AdminController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/AdminController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/CategoryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/CategoryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/DashboardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/DashboardController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/ProductController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ProductController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/AdminRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/AdminRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ProductModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ProductModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/CategoryRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/CategoryRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/Index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/ProductRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/ProductRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/DashboardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/DashboardLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductCreateLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductCreateLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductSetupLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductSetupLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/client/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/client/Hero.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/client/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/client/Navbar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/NotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/NotFound.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/admin/Authentication.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/admin/Authentication.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/admin/ProductSetup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/admin/ProductSetup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Accessories.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Laptop.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Login.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Register.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Sparepart.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/client/Item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/ItemList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/client/ItemList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +155,10 @@
       <workItem from="1701092019565" duration="16618000" />
       <workItem from="1701140037027" duration="9736000" />
       <workItem from="1701169569266" duration="17402000" />
+      <workItem from="1701222580064" duration="7937000" />
+      <workItem from="1701234087723" duration="148000" />
+      <workItem from="1701234383169" duration="1375000" />
+      <workItem from="1701237749600" duration="6245000" />
     </task>
     <servers />
   </component>

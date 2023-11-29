@@ -1,6 +1,7 @@
 <script>
 import axios from "axios";
 import Config from "../../../config.js";
+import { v4 as uuidv4 } from "uuid";
 
 export default {
   name: "ProductCreateLayout",
@@ -8,7 +9,10 @@ export default {
     return {
       category_data: [],
       addProduct: {
-        name: null,
+        name: '',
+        category: '',
+        price: '',
+        description: '',
       },
     }
   },
@@ -22,6 +26,32 @@ export default {
   },
 
   methods: {
+    async CreateItem() {
+      try {
+        const response = await axios.post(Config.POST_CREATE_NEW_PRODUCT, {
+          id: uuidv4(),
+          name: this.addProduct.name,
+          price: this.addProduct.price,
+          category: this.addProduct.category,
+          description: this.addProduct.description,
+        });
+
+        if (response.status === 200) {
+          alert("success");
+          window.location.href=`${Config.ROUTE_TO_PRODUCTSETUP_LAYOUT}${this.$route.params.categoryId}`;
+        }
+      } catch (err) {
+        console.log("Internal Server Error: ", err.message);
+      }
+    },
+
+    resetAllInput(){
+      this.addProduct.name = '';
+      this.addProduct.price = '';
+      this.addProduct.category = '';
+      this.addProduct.description = '';
+    },
+
     async fetchAllCategory() {
       try {
         const response = await axios.get(Config.GET_ALL_CATEGORY_DATA);
@@ -66,39 +96,52 @@ export default {
     </div>
   </div>
 
-  <div class="ms-3 mb-5 h-96 overflow-y-auto">
-    <div class="card card-body -mt-6 -ms-4 h-96 bg-base-content/20">
-      <div class="flex gap-2 p-2">
-        <div class="grid gap-3 w-full">
+  <div class="ms-3 mb-0 h-96 overflow-y-auto">
+    <div class="card card-body -mt-6 -ms-4 h-full bg-base-content/20">
+      <div class="flex gap-10 p-2">
+        <div class="grid gap-3 w-96">
           <div class="grid gap-3">
             <label class="text-base-content/100 font-normal">Product Name</label>
-            <input type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />
+            <input v-model="addProduct.name" type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />
           </div>
+
           <div class="grid gap-3">
             <label class="text-base-content/100 font-normal">Category</label>
-            <select v-model="addProduct.name" class="w-80 bg-base-content/5 p-4 bordered">
+            <select v-model="addProduct.category" class="w-80 bg-base-content/5 p-4 bordered">
               <option selected disabled>Select Category</option>
               <option v-for="(category, index) in category_data" :key="category.id" :value="category.name">{{ category.name }}</option>
             </select>
           </div>
           <div class="grid gap-3">
             <label class="text-base-content/100 font-normal">Description</label>
-            <textarea class="textarea text-white bg-base-content/5 textarea-bordered" placeholder=""></textarea>
+            <textarea v-model="addProduct.description" class="textarea w-80 text-white bg-base-content/5 textarea-bordered" placeholder=""></textarea>
           </div>
         </div>
-        <div class="grid gap-3 w-full">
+        <div class="grid gap-3 w-96">
           <div class="grid gap-3">
-            <label class="text-base-content/100 font-normal">Product Images</label>
-            <input type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />
+            <label class="text-base-content/100 font-normal">Price</label>
+            <input v-model="addProduct.price" type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />
           </div>
           <div class="grid gap-3">
-            <label class="text-base-content/100 font-normal">Category</label>
-            <input type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />
+            <label class="text-base-content/100 font-normal"></label>
+<!--            <input v-model="addProduct.name" type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />-->
+          </div>
+          <div class="grid gap-3">
+<!--            <label class="text-base-content/100 font-normal">Image</label>-->
+<!--            <input type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />-->
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="ms-3 divider divider-end">
+    <div class="flex gap-3">
+      <button @click="resetAllInput" class="bg-base-content/5 py-2 btn px-5 hover:bg-base-content/5 normal-case border-0 text-white" style="font-size: 1rem;">Reset</button>
+      <button @click="CreateItem" class="bg-success/75 py-2 btn px-5 hover:bg-success/75 normal-case border-0 text-black" style="font-size: 1rem;">Create</button>
+    </div>
+  </div>
+
 </template>
 
 <style scoped>

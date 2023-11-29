@@ -5,6 +5,9 @@ module.exports = {
       backgroundColor: {
         'primary': '#5b89d4',
       },
+      borderColor: {
+        'primary': '#5b89d4',
+      },
     },
   },
   content: [
