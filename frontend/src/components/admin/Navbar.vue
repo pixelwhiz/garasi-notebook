@@ -25,7 +25,7 @@ export default {
           </button>
         </div>
         <div class="flex gap-2">
-          <label>Muhammad Daffa</label>
+          <label>garasinotebook@gmail.com</label>
           <div class="avatar -translate-y-1">
             <div class="w-8 rounded-full">
               <img src="../../assets/img/logo_rog.png" />

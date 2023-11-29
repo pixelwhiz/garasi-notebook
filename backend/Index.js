@@ -27,7 +27,6 @@ dotenv.config();
 app.use(passport.initialize());
 app.use(passport.session());
 
-// CORS middleware to handle headers
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "http://localhost:5173");
     res.header("Access-Control-Allow-Credentials", true);
@@ -36,7 +35,6 @@ app.use((req, res, next) => {
     next();
 });
 
-// Use CORS middleware for specific routes
 app.use("/api", cors({
     origin: "http://localhost:5173",
     credentials: true,

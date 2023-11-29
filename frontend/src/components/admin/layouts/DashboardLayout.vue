@@ -1,6 +1,35 @@
 <script>
+import axios from "axios";
+import Config from "../../../config.js";
+
 export default {
-  name: "Dashboard"
+  name: "Dashboard",
+
+  data() {
+    return {
+      totalProduct: '',
+      totalVisitor: '',
+      totalOrder: '',
+    }
+  },
+
+  created() {
+    this.fetchAllData();
+  },
+
+  mounted() {
+    this.fetchAllData();
+  },
+
+  methods: {
+    async fetchAllData() {
+      const response = await axios.get(Config.GET_ALL_DASHBOARD_DATA);
+      this.totalProduct = response.data.totalProduct.count;
+      this.totalVisitor = response.data.totalVisitor.count;
+      this.totalOrder = response.data.totalOrder.count;
+    },
+  },
+
 }
 </script>
 
@@ -33,7 +62,7 @@ export default {
             <label class="text-2xl text-center font-normal text-base-content">Visitors</label>
           </div>
           <div class="grid w-20">
-            <label class="text-center py-5 bg-primary text-white font-bold text-3xl">50</label>
+            <label class="text-center py-5 bg-primary text-white font-bold text-3xl">{{ this.totalVisitor }}</label>
           </div>
         </div>
       </div>
@@ -44,7 +73,7 @@ export default {
             <label class="text-2xl text-center font-normal text-base-content">Orders</label>
           </div>
           <div class="grid w-20">
-            <label class="text-center py-5 bg-primary text-white font-bold text-3xl">51</label>
+            <label class="text-center py-5 bg-primary text-white font-bold text-3xl">{{ this.totalOrder }}</label>
           </div>
         </div>
       </div>
@@ -55,7 +84,7 @@ export default {
             <label class="text-2xl text-center font-normal text-base-content">Product</label>
           </div>
           <div class="grid w-20">
-            <label class="text-center bg-primary py-5 text-white font-bold text-3xl">71</label>
+            <label class="text-center bg-primary py-5 text-white font-bold text-3xl">{{ this.totalProduct }}</label>
           </div>
         </div>
       </div>

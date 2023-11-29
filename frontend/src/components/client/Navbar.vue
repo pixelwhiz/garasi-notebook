@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <div class="navbar pe-5 sm:px-5 md:px-12 lg:px-24 fixed bg-black z-[1]">
     <div class="navbar-start">
@@ -24,11 +20,9 @@
       <a class="btn btn-ghost normal-case text-xl">Garasi Notebook</a>
     </div>
     <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
+      <ul class="menu menu-horizontal flex gap-3 px-1">
         <li><a href="/" :class="{ 'bg-base-100': this.$route.path === '/' }">Home</a></li>
-        <li><a href="/laptop" :class="{ 'bg-base-100': this.$route.path === '/laptop' }">Laptop</a></li>
-        <li><a href="/sparepart" :class="{ 'bg-base-100': this.$route.path === '/sparepart' }">Sparepart</a></li>
-        <li><a href="/accessories" :class="{ 'bg-base-100': this.$route.path === '/accessories' }">Accessories</a></li>
+        <li v-for="category in category_data" :key="category.id"><button @click="routeToCategory(category.id)" :class="{ 'bg-base-100': this.$route.path === `/q/${category.id}` }">{{ category.name }}</button></li>
       </ul>
     </div>
     <div class="navbar-end">
@@ -48,16 +42,39 @@
 
 
 <script>
+import Config from "../../config.js";
+import axios from "axios";
 
 export default {
   name: "Navbar",
 
-  mounted() {
+  data() {
+    return {
+      category_data: [],
+    }
+  },
 
+  mounted() {
+    this.fetchAllCategory();
+  },
+
+  created() {
+    this.fetchAllCategory();
   },
 
   methods: {
+    routeToCategory(category_id) {
+      this.$router.push(`/q/${category_id}`);
+    },
 
+    async fetchAllCategory() {
+      try {
+        const response = await axios.get(Config.GET_ALL_CATEGORY_DATA);
+        this.category_data = response.data;
+      } catch (err) {
+        console.log("Internal Server Error: ", err.message);
+      }
+    },
   },
 
 }

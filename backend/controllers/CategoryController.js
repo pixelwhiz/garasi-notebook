@@ -2,6 +2,7 @@ const db = require("../models");
 const {randomUUID, randomInt} = require("crypto");
 const {Sequelize, DataTypes, UUIDV4} = require("sequelize");
 const Category = db.category;
+const Product = db.product;
 const {Op} = require("sequelize");
 const { v4: uuidv4 } = require("uuid");
 
@@ -71,6 +72,24 @@ exports.delete = async (req, res) => {
            },
         });
 
+        const productToDelete = await Product.findAll({
+            where: {
+                name: existingCategory.name,
+            },
+        });
+
+        await Promise.all(productToDelete.map(async (Product) => {
+            try {
+                await Product.destroy({
+                    where: {
+                        name: existingCategory.name,
+                    },
+                });
+            } catch (err) {
+                console.log("Internal Server Error: ", err.message);
+            }
+        }));
+
         res.status(200).send({ status: true, message: `Successfully deleted Category` });
     } catch (err) {
         res.status(500).send({ status: false, message: "Internal Server Error" });
@@ -90,6 +109,27 @@ exports.getAllData = async (req, res) => {
         res.json(categoryData);
     } catch (err) {
         res.status(500).send({ status: false, message: "Internal Server Error" });
+        console.log("Internal Server Error: ", err.message);
+    }
+};
+
+exports.getNameById = async (req, res) => {
+    try {
+        const { id } = req.body;
+
+        const existingCategory = await Category.findOne({
+            where: {
+                id: {
+                    [Op.eq]: id,
+                },
+            },
+        });
+
+        console.log(existingCategory.name);
+
+        return res.status(200).send({ status: true, categoryName: "qwe" });
+
+    } catch (err) {
         console.log("Internal Server Error: ", err.message);
     }
 };

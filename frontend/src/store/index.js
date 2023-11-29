@@ -12,7 +12,6 @@ const store = createStore({
     actions: {
         setLoginStatusAdmin({ commit }, status) {
             commit('SET_LOGIN_STATUS_ADMIN', status);
-            sessionStorage.setItem('isLoggedInAdmin', status);
         },
     },
     getters: {

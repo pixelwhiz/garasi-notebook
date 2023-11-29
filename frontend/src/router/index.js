@@ -1,29 +1,30 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import ClientHome from '../views/client/Home.vue';
-import Laptop from "../views/client/Laptop.vue";
-import Sparepart from "../views/client/Sparepart.vue";
-import Accessories from "../views/client/Accessories.vue";
+import ItemList from "../views/client/ItemList.vue";
+import Item from "../views/client/Item.vue";
 
 import AdminLogin from '../views/admin/Authentication.vue';
 import Dashboard from '../views/admin/Dashboard.vue';
 import Product from "../views/admin/Product.vue";
 import ProductSetup from "../views/admin/ProductSetup.vue";
+import ProductCreate from "../views/admin/ProductCreate.vue";
 import Settings from "../views/admin/Settings.vue";
 
 
 import NotFound from "../views/NotFound.vue";
+import Store from "../store/index.js";
 const routes = [
     { path: '/', component: ClientHome },
-    { path: '/laptop', component: Laptop },
-    { path: '/sparepart', component: Sparepart },
-    { path: '/accessories', component: Accessories },
+    { path: '/p/:categoryId', component: ItemList },
+    { path: '/p/:categoryId/:productId', component: Item },
 
-    { path: '/admin/login', component: AdminLogin },
-    { path: '/admin/dashboard', component: Dashboard },
-    { path: '/admin/product', component: Product     },
-    { path: '/admin/product/setup/:id', component: ProductSetup },
-    { path: '/admin/settings', component: Settings },
+    { path: '/admin/login', component: AdminLogin, meta: { authAdmin: false } },
+    { path: '/admin/dashboard', component: Dashboard, meta: { authAdmin: true } },
+    { path: '/admin/product', component: Product, meta: { authAdmin: true } },
+    { path: '/admin/product/setup/:categoryId', component: ProductSetup, meta: { authAdmin: true } },
+    { path: '/admin/product/setup/:categoryId/create', component: ProductCreate, meta: { authAdmin: true } },
+    { path: '/admin/settings', component: Settings, meta: { authAdmin: true } },
 
     { path: '/:pathMatch(.*)*', component: NotFound }
 ];
@@ -33,5 +34,19 @@ const router = createRouter({
     routes,
 });
 
+router.beforeEach((to, from, next) => {
+    const isLoggedInAdmin = Store.getters.isLoggedInAdmin;
+    if (to.matched.some(record => record.meta.authAdmin)) {
+        if (!isLoggedInAdmin) {
+            next('/admin/login');
+        } else {
+            next();
+        }
+    } else if (isLoggedInAdmin && (to.path === '/admin/login')) {
+        next('/admin/dashboard');
+    } else {
+        next();
+    }
+});
 
 export default router;

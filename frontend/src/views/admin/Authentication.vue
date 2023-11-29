@@ -96,6 +96,8 @@ import axios from "axios";
 import {Dialog} from "@headlessui/vue";
 import Config from "../../config.js";
 import Store from "../../store/index.js";
+import {mapActions} from "vuex";
+import {tr} from "vuetify/locale";
 
 export default {
   name: "Authentication",
@@ -125,7 +127,8 @@ export default {
         });
 
         if (response.status === 200) {
-          Store.dispatch("setLoginStatusAdmin", true);
+          Store.dispatch('setLoginStatusAdmin', true);
+          sessionStorage.setItem("jwt", response.data.token);
           document.getElementById("successModal").showModal();
         } else {
           document.getElementById("failedModal").showModal();

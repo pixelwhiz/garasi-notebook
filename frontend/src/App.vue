@@ -7,9 +7,9 @@
 </style>
 
 <script>
-import axios from "axios";
 import Config from "./config.js";
-import store from "./store/index.js";
+import Store from "./store/index.js";
+import axios from "axios";
 
 export default {
   name: "App",
@@ -22,37 +22,27 @@ export default {
 
   mounted() {
     this.check();
-    this.getUser();
   },
 
   created() {
     this.check();
-    this.getUser();
+    this.addVisitor();
   },
 
   methods: {
-    async getUser() {
+
+    async addVisitor() {
       try {
-        const response = await axios.get(Config.GET_ADMIN_LOGIN_DATA_URL);
-        if (response.status === 200) {
-          this.user_data = response.data.user;
-          store.dispatch("setLoginStatusAdmin", true);
-        } else {
-          console.log(response.data.message);
-          store.dispatch("setLoginStatusAdmin", false);
-        }
-      } catch (error) {
-        if (error.response) {
-          store.dispatch("setLoginStatusAdmin", false);
-        } else {
-          store.dispatch("setLoginStatusAdmin", false);
-        }
+        const response = await axios.post(Config.POST_ADD_VISITOR);
+      } catch (err) {
+        console.log("Internal Server Error: ", err.message);
       }
     },
+
     check() {
-      const isLoggedInAdmin = sessionStorage.getItem(`${Config.LOGIN_TOKENS}`);
+      const isLoggedInAdmin = sessionStorage.getItem("jwt");
       if (isLoggedInAdmin) {
-        store.dispatch("setLoginStatusAdmin", isLoggedInAdmin === true);
+        Store.dispatch("setLoginStatusAdmin", 'true');
       }
     },
   },

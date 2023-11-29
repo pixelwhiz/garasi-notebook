@@ -5,361 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc8d0fda-aee7-46a7-b675-13f9b85fb213" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/ProductController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/CategoryModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ImageModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/AdminRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/CategoryRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/Index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/DashboardController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/DashboardModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/DashboardRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductCreateLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductEditLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductSetupLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/views/admin/ProductCreate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/views/admin/ProductEdit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/views/client/Item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/views/client/ItemList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fce89fc6-3cbe-45cf-96ff-078c2c24e704/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/CategoryController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/ProductController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/AdminController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/CategoryModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/CategoryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/AdminController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/AdminController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/CategoryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/CategoryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/ProductController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ProductController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ProductModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ProductModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/md5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/md5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/rng.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/rng.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/sha1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/sha1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v3.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v35.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v35.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v35.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v35.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/rng-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/rng-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidNIL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidParse.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidStringify.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidValidate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidVersion.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/v35.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/v35.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/v4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/Index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/ProductRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/router/ProductRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/AdminRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/AdminRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/CategoryRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/CategoryRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/ProductRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/ProductRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/activity.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/airplay.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/alert-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/alert-octagon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/alert-triangle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/align-center.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/align-justify.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/align-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/align-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/anchor.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/aperture.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/archive.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-down-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-down-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-down-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-left-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-right-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-up-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-up-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-up-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/arrow-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/at-sign.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/award.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bar-chart-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bar-chart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/battery-charging.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/battery.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bell-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bell.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bluetooth.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/book-open.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/book.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/bookmark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/box.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/briefcase.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/calendar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/camera-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/camera.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cast.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/check-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/check-square.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevron-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevron-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevron-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevron-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevrons-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevrons-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevrons-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chevrons-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/chrome.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/clipboard.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-drizzle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-lightning.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-rain.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud-snow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cloud.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/code.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/codepen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/codesandbox.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/coffee.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/columns.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/command.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/compass.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/copy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-down-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-down-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-left-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-left-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-right-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-right-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-up-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/corner-up-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/cpu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/credit-card.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/crop.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/crosshair.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/database.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/delete.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/disc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/divide-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/divide-square.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/divide.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/dollar-sign.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/download-cloud.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/download.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/dribbble.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/droplet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/edit-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/edit-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/edit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/external-link.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/eye-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/eye.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/fast-forward.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/feather.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/figma.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/file-minus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/file-plus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/file-text.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/film.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/filter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/flag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/folder-minus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/folder-plus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/folder.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/framer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/frown.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/gift.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/git-branch.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/git-commit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/git-merge.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/git-pull-request.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/github.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/gitlab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/grid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/hard-drive.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/hash.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/headphones.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/heart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/help-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/hexagon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/home.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/inbox.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/info.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/key.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/layers.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/layout.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/life-buoy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/link-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/link.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/linkedin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/list.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/loader.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/lock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/log-in.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/log-out.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/mail.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/map-pin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/map.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/maximize-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/maximize.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/meh.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/menu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/message-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/message-square.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/mic-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/mic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minimize-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minimize.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minus-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minus-square.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/minus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/monitor.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/moon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/more-horizontal.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/more-vertical.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/mouse-pointer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/move.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/music.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/navigation-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/navigation.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/octagon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/package.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/paperclip.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pause-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pause.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pen-tool.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/percent.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-call.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-forwarded.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-incoming.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-missed.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone-outgoing.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/phone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pie-chart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/play-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/play.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/plus-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/plus-square.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/plus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/pocket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/power.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/printer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/radio.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/refresh-ccw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/refresh-cw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/repeat.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/rewind.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/rotate-ccw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/rotate-cw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/rss.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/save.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/scissors.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/send.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/server.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/settings.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/share-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/share.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shield-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shield.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shopping-bag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shopping-cart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/shuffle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sidebar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/skip-back.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/skip-forward.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/slack.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/slash.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sliders.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/smartphone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/smile.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/speaker.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/square.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/star.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/stop-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sun.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sunrise.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/sunset.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/table.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/tablet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/tag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/target.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/terminal.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/thermometer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/thumbs-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/thumbs-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/toggle-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/toggle-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/tool.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trash-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trash.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trello.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trending-down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/trending-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/triangle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/truck.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/tv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/twitch.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/type.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/umbrella.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/underline.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/unlock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/upload-cloud.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/upload.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user-check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user-minus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user-plus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user-x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/user.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/users.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/video-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/video.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/voicemail.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/volume-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/volume-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/volume-x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/volume.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/watch.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/wifi-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/wifi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/wind.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/x-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/x-octagon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/x-square.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/youtube.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/zap-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/zap.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/zoom-in.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/img/icons/zoom-out.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/DashboardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/DashboardLayout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/admin/layouts/ProductLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/client/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/client/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/NotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/NotFound.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/admin/Authentication.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/admin/Authentication.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/admin/ProductSetup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/admin/ProductSetup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Accessories.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Laptop.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Login.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Register.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/client/Sparepart.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -392,39 +90,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "18.16.1",
-    "javascript.nodejs.core.library.typings.version": "18.16.1",
-    "last_opened_file_path": "C:/Users/ASUS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "D:\\daffa\\dev\\planet\\backend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.16.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\daffa\\dev\\planet\\backend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redshift",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redshift&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -464,7 +162,10 @@
       <workItem from="1700980443842" duration="10591000" />
       <workItem from="1701052996771" duration="9861000" />
       <workItem from="1701066870194" duration="1380000" />
-      <workItem from="1701068319453" duration="3842000" />
+      <workItem from="1701068319453" duration="9879000" />
+      <workItem from="1701092019565" duration="16618000" />
+      <workItem from="1701140037027" duration="9736000" />
+      <workItem from="1701169569266" duration="17402000" />
     </task>
     <servers />
   </component>
