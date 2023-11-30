@@ -8,6 +8,12 @@ module.exports = {
       borderColor: {
         'primary': '#5b89d4',
       },
+      textColor: {
+        'primary': '#5b89d4',
+      },
+      boxShadowColor: {
+        'primary': '#5b89d4',
+      },
     },
   },
   content: [

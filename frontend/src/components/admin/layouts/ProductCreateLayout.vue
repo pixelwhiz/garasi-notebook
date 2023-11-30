@@ -2,54 +2,126 @@
 import axios from "axios";
 import Config from "../../../config.js";
 import { v4 as uuidv4 } from "uuid";
+import {QuillEditor} from "@vueup/vue-quill";
+import UploadImage from "../../layouts/UploadImage.vue";
 
 export default {
   name: "ProductCreateLayout",
+  components: {QuillEditor, UploadImage},
   data() {
     return {
+      imagePreviews: [],
       category_data: [],
+      categoryname: '',
       addProduct: {
         name: '',
         category: '',
         price: '',
+        condition: '',
         description: '',
       },
+      isInputFocused: true,
     }
   },
 
-  mounted() {
-    this.fetchAllCategory();
+  async mounted() {
+    await this.getNameById();
+    await this.fetchAllCategory();
   },
 
-  created() {
-    this.fetchAllCategory();
+  async created() {
+    await this.getNameById();
+    await this.fetchAllCategory();
+  },
+
+  computed: {
+    formattedPrice: {
+      get() {
+        return this.addProduct.price;
+      },
+      set(value) {
+        const cleanedValue = value.replace(/[^\d]/g, '');
+        const numberValue = parseInt(cleanedValue);
+        if (!isNaN(numberValue) && numberValue > 100000000) {
+          this.addProduct.price = '100000000';
+        } else {
+          this.addProduct.price = numberValue.toLocaleString();
+        }
+      }
+    },
+
+    isAddProductValid() {
+      return (
+          this.addProduct.name.trim() !== '' &&
+          this.addProduct.price.trim() !== '' && this.addProduct.price.trim() !== 'NaN' &&
+          this.addProduct.description.trim() !== '' &&
+          this.addProduct.condition.trim() !== ''
+      );
+    },
   },
 
   methods: {
-    async CreateItem() {
+    async getNameById() {
       try {
-        const response = await axios.post(Config.POST_CREATE_NEW_PRODUCT, {
-          id: uuidv4(),
-          name: this.addProduct.name,
-          price: this.addProduct.price,
-          category: this.addProduct.category,
-          description: this.addProduct.description,
+        const response = await axios.post(Config.POST_GET_CATEGORYNAME_BY_ID, {
+          id: this.$route.params.categoryId,
         });
-
-        if (response.status === 200) {
-          alert("success");
-          window.location.href=`${Config.ROUTE_TO_PRODUCTSETUP_LAYOUT}${this.$route.params.categoryId}`;
-        }
+        this.addProduct.category = response.data.name;
+        this.categoryname = response.data.name;
       } catch (err) {
         console.log("Internal Server Error: ", err.message);
       }
     },
 
-    resetAllInput(){
+    async uploadImages() {
+      const formData = new FormData();
+      this.imagePreviews.forEach((image) => {
+        formData.append('images', image);
+      });
+
+      const response = await axios.post(Config.UPLOAD_IMAGES_URL, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+
+      return response.data.imageUrls;
+    },
+
+    async CreateItem() {
+      try {
+        if (!/^[0-9.,]+$/.test(this.addProduct.price)) {
+          return;
+        }
+
+        const imageUrls = await this.uploadImages();
+        const response = await axios.post(Config.POST_CREATE_NEW_PRODUCT, {
+          id: uuidv4(),
+          name: this.addProduct.name,
+          price: this.addProduct.price,
+          category: this.addProduct.category,
+          condition: this.addProduct.condition,
+          description: this.addProduct.description,
+          imageUrls: imageUrls,
+        });
+
+        if (response.status === 200) {
+          alert("success");
+          window.location.href = `${Config.ROUTE_TO_PRODUCTSETUP_LAYOUT}${this.$route.params.categoryId}`;
+        }
+
+      } catch (err) {
+        console.log("Internal Server Error: ", err.message);
+      }
+    },
+
+    Cancel(){
       this.addProduct.name = '';
       this.addProduct.price = '';
       this.addProduct.category = '';
       this.addProduct.description = '';
+      this.addProduct.condition = '';
+      this.routeToProductSetup();
     },
 
     async fetchAllCategory() {
@@ -64,17 +136,81 @@ export default {
     routeToProductSetup() {
       this.$router.push(`/admin/product/setup/${this.$route.params.categoryId}`);
     },
+
+    handleInput() {
+      this.addProduct.price = this.addProduct.price.replace(/[^0-9]/g, '');
+      if (this.addProduct.price.startsWith('.')) {
+        this.addProduct.price = this.addProduct.price.slice(1);
+      }
+
+      const dotCount = this.addProduct.price.split('.').length - 1;
+      if (dotCount > 1) {
+        this.addProduct.price = this.addProduct.price.slice(0, -1);
+      }
+      const indexOfDot = this.addProduct.price.indexOf('.');
+      if (indexOfDot !== -1) {
+        const afterDot = this.addProduct.price.substring(indexOfDot + 1);
+        if (afterDot.indexOf('.') !== -1) {
+          this.addProduct.price = this.addProduct.price.slice(0, indexOfDot) + afterDot.slice(0, -1);
+        }
+      }
+
+      const numberValue = parseFloat(this.addProduct.price);
+      if (!isNaN(numberValue)) {
+        this.formattedPrice = numberValue.toLocaleString();
+      }
+    },
+
+    setInputFocus(value) {
+      this.isInputFocused = true;
+    },
+
+    setDescription() {
+      document.getElementById("setDescription").showModal();
+    },
+
+    resetDescription(){
+      this.addProduct.description = '';
+    },
+
+    handleFileChange(event) {
+      const files = event.target.files;
+      const totalFiles = this.imagePreviews.length + files.length;
+
+      for (let i = 0; i < files.length; i++) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          this.imagePreviews.push(e.target.result);
+        };
+        reader.readAsDataURL(files[i]);
+      }
+    },
+    removeImage(index) {
+      this.imagePreviews.splice(index, 1);
+      // Anda dapat menambahkan logika di sini untuk menghapus gambar di server jika diperlukan.
+    },
   },
 }
 
 </script>
 
 <template>
-  <div class="mt-5 ms-3">
-    <button @click="routeToProductSetup" class="text-white flex gap-3">
+  <div class="mt-5 flex justify-between ms-3">
+    <button @click="routeToProductSetup" class="text-white mt-1 flex gap-3">
       <svg class="fill-white mt-1" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
       Back
     </button>
+    <div class="text-sm breadcrumbs bg-transparent">
+      <ul>
+        <li><a>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 288A144 144 0 1 0 256 0a144 144 0 1 0 0 288zm-94.7 32C72.2 320 0 392.2 0 481.3c0 17 13.8 30.7 30.7 30.7H481.3c17 0 30.7-13.8 30.7-30.7C512 392.2 439.8 320 350.7 320H161.3z" fill="white"/></svg>
+        </a></li>
+        <li><a href="/admin/product">Product</a></li>
+        <li><a @click="routeToProductSetup">Setup</a></li>
+        <li><a @click="routeToProductSetup">{{ this.categoryname }}</a></li>
+        <li><a class="text-success" href="">Create</a></li>
+      </ul>
+    </div>
   </div>
   <div class="ms-3 flex my-5 justify-between">
     <label class="product text-white flex gap-3">
@@ -83,62 +219,89 @@ export default {
       </span>
       Add Product
     </label>
-    <div class="text-sm breadcrumbs mt-1.5">
-      <ul>
-        <li><a>
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 288A144 144 0 1 0 256 0a144 144 0 1 0 0 288zm-94.7 32C72.2 320 0 392.2 0 481.3c0 17 13.8 30.7 30.7 30.7H481.3c17 0 30.7-13.8 30.7-30.7C512 392.2 439.8 320 350.7 320H161.3z" fill="white"/></svg>
-        </a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">Setup</a></li>
-        <li><a href="">{{ this.$route.params.categoryId }}</a></li>
-        <li><a href="">Create</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="ms-3 mb-0 h-96 overflow-y-auto">
-    <div class="card card-body -mt-6 -ms-4 h-full bg-base-content/20">
-      <div class="flex gap-10 p-2">
-        <div class="grid gap-3 w-96">
-          <div class="grid gap-3">
-            <label class="text-base-content/100 font-normal">Product Name</label>
-            <input v-model="addProduct.name" type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />
-          </div>
-
-          <div class="grid gap-3">
-            <label class="text-base-content/100 font-normal">Category</label>
-            <select v-model="addProduct.category" class="w-80 bg-base-content/5 p-4 bordered">
-              <option selected disabled>Select Category</option>
-              <option v-for="(category, index) in category_data" :key="category.id" :value="category.name">{{ category.name }}</option>
-            </select>
-          </div>
-          <div class="grid gap-3">
-            <label class="text-base-content/100 font-normal">Description</label>
-            <textarea v-model="addProduct.description" class="textarea w-80 text-white bg-base-content/5 textarea-bordered" placeholder=""></textarea>
-          </div>
-        </div>
-        <div class="grid gap-3 w-96">
-          <div class="grid gap-3">
-            <label class="text-base-content/100 font-normal">Price</label>
-            <input v-model="addProduct.price" type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />
-          </div>
-          <div class="grid gap-3">
-            <label class="text-base-content/100 font-normal"></label>
-<!--            <input v-model="addProduct.name" type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />-->
-          </div>
-          <div class="grid gap-3">
-<!--            <label class="text-base-content/100 font-normal">Image</label>-->
-<!--            <input type="text" placeholder="" class="input text-white bg-base-content/5 input-bordered w-full max-w-xs" />-->
-          </div>
-        </div>
+    <div class="">
+      <div class="flex gap-3 justify-end">
+        <button @click="Cancel" class="bg-base-content/5 btn hover:bg-base-content/5 normal-case border-0 text-white font-normal" style="font-size: 1rem;">Cancel</button>
+        <button @click="CreateItem" :class="{ 'bg-success hover:bg-success text-white': isAddProductValid }" class="no-animation bg-base-content/5 hover:bg-base-content/5 btn normal-case border-0 text-base-content font-normal" style="font-size: 1rem;">Add Product</button>
       </div>
     </div>
   </div>
 
-  <div class="ms-3 divider divider-end">
-    <div class="flex gap-3">
-      <button @click="resetAllInput" class="bg-base-content/5 py-2 btn px-5 hover:bg-base-content/5 normal-case border-0 text-white" style="font-size: 1rem;">Reset</button>
-      <button @click="CreateItem" class="bg-success/75 py-2 btn px-5 hover:bg-success/75 normal-case border-0 text-black" style="font-size: 1rem;">Create</button>
+  <div class="bg-base-content/5 layouts shadow-base-content/50 shadow-md ms-3 mb-10 h-96 overflow-y-auto">
+    <div class="card card-body -mt-6 -ms-4 h-full">
+      <div class="flex flex-col lg:flex-row gap-10 p-2">
+        <div class="grid gap-3 w-full lg:w-96">
+          <div class="grid gap-3">
+            <label class="text-base-content/100 font-normal">Product Name</label>
+            <input v-model="addProduct.name" type="text" placeholder="Mouse Logitech B100" class="input text-white bg-base-content/5 input-bordered w-full" />
+          </div>
+
+          <div class="grid gap-3">
+            <label class="text-base-content/100 font-normal">Price</label>
+            <div class="flex gap-3">
+              <div class="input-container w-96">
+                <div class="currency-symbol text-white absolute ms-3" :class="{ 'visible': isInputFocused || addProduct.price !== '' }">Rp</div>
+                <input v-model="formattedPrice"
+                       type="text"
+                       placeholder="54,500"
+                       class="input text-white ps-10 bg-base-content/5 input-bordered w-full"
+                       @input="handleInput"
+                       @focus="setInputFocus(true)"
+                       @blur="setInputFocus(false)"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-3">
+            <label class="text-base-content/100 font-normal">Condition</label>
+            <select class="bg-base-content/5 py-3 px-4 border-base-content/25 border" v-model="addProduct.condition">
+              <option selected disabled>Select Condition</option>
+              <option class="flex justify-space-between">
+                New
+              </option>
+              <option>Second</option>
+              <option>No Condition</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid gap-5 w-full">
+          <div class="grid gap-3">
+            <label class="text-base-content/100 font-normal">Description</label>
+            <textarea v-model="addProduct.description" placeholder="" class="textarea bg-base-content/5 textarea-bordered textarea-lg w-full" ></textarea>
+          </div>
+          <div class="grid">
+            <label class="text-base-content/100 font-normal">Add Images</label>
+            <div class="container mx-auto">
+              <input
+                  type="file"
+                  id="upload"
+                  ref="fileInput"
+                  class="mt-5 mb-4 p-2 border border-gray-300 rounded-md"
+                  @change="handleFileChange"
+                  multiple
+              />
+              <div class="mx-auto bg-base-content/5 p-3 shadow-md">
+                <div v-if="imagePreviews.length > 0" class="flex flex-wrap">
+                  <div
+                      v-for="(preview, index) in imagePreviews"
+                      :key="index"
+                      class="relative mr-4"
+                  >
+                    <img :src="preview" alt="Preview" class="w-20 h-20 object-cover" />
+                    <button
+                        @click="removeImage(index)"
+                        class="absolute top-0 right-0 p-1 bg-red-500 text-white rounded-full"
+                    >
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -177,14 +340,28 @@ td {
   font-size: 2rem;
 }
 
-.productlayout {
+.layouts {
   border-radius: 0rem;
-  padding: 1rem;
-  font-size: 1rem;
 }
 
 .card, .card-body, textarea {
   border-radius: 0rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.currency-symbol {
+  margin-right: 8px; /* Sesuaikan sesuai kebutuhan tata letak */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.currency-symbol.visible {
+  opacity: 1;
 }
 
 </style>

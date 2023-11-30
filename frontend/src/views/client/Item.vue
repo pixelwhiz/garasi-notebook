@@ -1,11 +1,11 @@
 <script>
-import ItemListLayout from "../../components/client/layouts/ItemListLayout.vue";
 import Footer from "../../components/client/Footer.vue";
 import Navbar from "../../components/client/Navbar.vue";
+import ItemLayout from "../../components/client/layouts/ItemLayout.vue";
 
 export default {
   name: "Item",
-  components: {Navbar, Footer, ItemListLayout}
+  components: {ItemLayout, Navbar, Footer}
 }
 </script>
 
@@ -14,7 +14,7 @@ export default {
   <div class="pt-16">
     <div class="grid">
       <div class="">
-        <ItemListLayout />
+        <ItemLayout />
       </div>
       <Footer />
     </div>

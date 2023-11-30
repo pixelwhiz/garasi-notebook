@@ -24,5 +24,6 @@ sequelize.sync();
 db.product = require("./ProductModel")(sequelize, Sequelize);
 db.category = require("./CategoryModel")(sequelize, Sequelize);
 db.dashboard = require("./DashboardModel")(sequelize, Sequelize);
+db.image = require("./ImageModel")(sequelize, Sequelize);
 
 module.exports = db;

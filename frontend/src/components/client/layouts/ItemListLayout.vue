@@ -7,9 +7,9 @@
       </label>
     </div>
     <div class="divider"></div>
-    <div class="flex flex-wrap gap-5 ps-2.5">
+    <div class="flex flex-wrap gap-0 ps-2.5">
       <div v-if="product_data.length === 0">
-        <label class="text-2xl">There are no items here!</label>
+        <label class="text-2xl">There are no item here!</label>
       </div>
       <div v-else>
         <div v-for="product in product_data" :key="product.id">

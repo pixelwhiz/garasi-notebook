@@ -40,7 +40,8 @@ exports.create = async (req, res) => {
 
         const data = await Category.create({
             id: id,
-            name: name
+            name: name,
+            total: 0,
         });
 
         res.status(200).send({ status: true, message: `Creating a new Category with the name ${name}` });
@@ -103,6 +104,7 @@ exports.getAllData = async (req, res) => {
         const categoryData = allCategory.map(category => ({
             id: category.id,
             name: category.name,
+            total: category.total,
             createdAt: category.createdAt,
             updatedAt: category.updatedAt
         }));
@@ -110,6 +112,20 @@ exports.getAllData = async (req, res) => {
     } catch (err) {
         res.status(500).send({ status: false, message: "Internal Server Error" });
         console.log("Internal Server Error: ", err.message);
+    }
+};
+
+exports.getTotalItemByCategory = async (req, res) => {
+    try {
+        const { category } = req.body;
+        const itemCount = await Product.count({
+            where: { category: category },
+        });
+
+        res.json({ itemCount: itemCount });
+    } catch (err) {
+        console.log("Internal Server Error: ", err.message);
+        res.status(500).json({ error: "Internal Server Error" });
     }
 };
 

@@ -14,10 +14,14 @@ const Config = {
     POST_ADD_PRODUCT: "http://localhost:3000/api/dashboard/addproduct",
 
     GET_ALL_PRODUCT_DATA: "http://localhost:3000/api/product/get",
+    POST_GET_PRODUCTNAME_BY_ID: "http://localhost:3000/api/product/getnamebyid",
     POST_GET_ALL_PRODUCT_BY_CATEGORY: "http://localhost:3000/api/product/get_product_by_category",
     POST_CREATE_NEW_PRODUCT: "http://localhost:3000/api/product/create",
+    POST_DELETE_PRODUCT: "http://localhost:3000/api/product/delete",
 
     ROUTE_TO_PRODUCTSETUP_LAYOUT: "http://localhost:5173/admin/product/setup/",
+
+    UPLOAD_IMAGES_URL: "http://localhost:3000/api/product/upload/image",
 };
 
 export default Config;

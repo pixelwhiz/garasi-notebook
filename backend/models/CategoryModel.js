@@ -4,6 +4,7 @@ module.exports = (sequelize, Sequelize) => {
     const CategoryModel = sequelize.define("category", {
         id: { type: Sequelize.STRING, primaryKey: true, allowNull: false },
         name: { type: Sequelize.STRING, allowNull: false },
+        total: { type: DataTypes.INTEGER, allowNull: false },
         createdAt: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.NOW },
         updatedAt: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.NOW },
     }, {

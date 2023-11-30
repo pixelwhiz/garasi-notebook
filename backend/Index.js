@@ -8,6 +8,7 @@ const bodyParser = require("body-parser");
 const router = require("./router");
 
 app.use(express.static('db'));
+app.use("./db", express.static('db'));
 
 app.use(session({
     secret: `${process.env.SECRET_KEY_SESSION}`,
@@ -42,7 +43,7 @@ app.use("/api", cors({
 }));
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 

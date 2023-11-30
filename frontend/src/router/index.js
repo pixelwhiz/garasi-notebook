@@ -11,9 +11,9 @@ import ProductSetup from "../views/admin/ProductSetup.vue";
 import ProductCreate from "../views/admin/ProductCreate.vue";
 import Settings from "../views/admin/Settings.vue";
 
-
 import NotFound from "../views/NotFound.vue";
 import Store from "../store/index.js";
+import ProductEdit from "../views/admin/ProductEdit.vue";
 const routes = [
     { path: '/', component: ClientHome },
     { path: '/p/:categoryId', component: ItemList },
@@ -24,6 +24,7 @@ const routes = [
     { path: '/admin/product', component: Product, meta: { authAdmin: true } },
     { path: '/admin/product/setup/:categoryId', component: ProductSetup, meta: { authAdmin: true } },
     { path: '/admin/product/setup/:categoryId/create', component: ProductCreate, meta: { authAdmin: true } },
+    { path: '/admin/product/setup/:categoryId/edit/:productId', component: ProductEdit, meta: { authAdmin: true } },
     { path: '/admin/settings', component: Settings, meta: { authAdmin: true } },
 
     { path: '/:pathMatch(.*)*', component: NotFound }
