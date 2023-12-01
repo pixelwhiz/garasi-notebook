@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const passport = require("passport");
 const bodyParser = require("body-parser");
-const router = require("./router");
+const router = require("./router/Index");
 
 app.use(express.static('db'));
 app.use("./db", express.static('db'));
