@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../models/Index");
 const {randomUUID, randomInt} = require("crypto");
 const {Sequelize, DataTypes, UUIDV4} = require("sequelize");
 const Product = db.product;

@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../models/Index");
 const Dashboard = db.dashboard;
 const Product = db.product;
 const Category = db.category;
