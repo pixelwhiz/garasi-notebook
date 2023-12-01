@@ -11,4 +11,7 @@ export default defineConfig({
     outDir: 'prod',
     emptyOutDir: true
   },
+  server: {
+    port: 5173,
+  },
 })
