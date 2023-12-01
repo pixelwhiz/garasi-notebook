@@ -1,4 +1,5 @@
 <template>
+
   <div class="navbar pe-5 sm:px-5 md:px-12 lg:px-24 fixed bg-black z-[1]">
     <div class="navbar-start">
       <div class="dropdown">
@@ -32,6 +33,7 @@
       </a>
     </div>
   </div>
+
 </template>
 
 <style scoped>
