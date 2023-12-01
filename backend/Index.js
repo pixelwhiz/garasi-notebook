@@ -29,7 +29,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "http://localhost:5173");
+    res.header("Access-Control-Allow-Origin", process.env.SERVER_ADDRESS);
     res.header("Access-Control-Allow-Credentials", true);
     res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -37,7 +37,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/api", cors({
-    origin: "http://localhost:5173",
+    origin: process.env.SERVER_ADDRESS,
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
 }));
