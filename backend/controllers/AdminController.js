@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../models/Index");
 const { v4: uuidv4 } = require("uuid");
 const jwt = require("jsonwebtoken");
 
