@@ -7,4 +7,8 @@ export default defineConfig({
   plugins: [vue(), VueJsx(), VitePWA({
     registerType: 'prompt',
   })],
+  build: {
+    outDir: 'prod',
+    emptyOutDir: true
+  },
 })
