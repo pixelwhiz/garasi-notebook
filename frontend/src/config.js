@@ -19,7 +19,7 @@ const Config = {
     POST_CREATE_NEW_PRODUCT: "http://localhost:3000/api/product/create",
     POST_DELETE_PRODUCT: "http://localhost:3000/api/product/delete",
 
-    ROUTE_TO_PRODUCTSETUP_LAYOUT: "http://localhost:5173/admin/product/setup/",
+    ROUTE_TO_PRODUCTSETUP_LAYOUT: "http://localhost:4173/admin/product/setup/",
 
     UPLOAD_IMAGES_URL: "http://localhost:3000/api/product/upload/image",
 };
