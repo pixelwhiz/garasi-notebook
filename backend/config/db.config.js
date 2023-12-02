@@ -4,7 +4,7 @@ module.exports = {
     PASSWORD: "",
     DB: "garasinotebook",
     DIALECT: "mysql",
-    PORT: 3306,
+    PORT: 33361,
     pool: {
         max: 5,
         min: 0,
