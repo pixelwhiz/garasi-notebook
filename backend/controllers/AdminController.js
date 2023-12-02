@@ -13,6 +13,7 @@ exports.login = async (req, res) => {
             console.log(`${ip} is Connnected`);
         } else {
             res.status(401).send({ status: false, message: "Invalid Credentials" });
+            console.log(`${ip} is failed to Logged In`);
         }
     } catch (error) {
         console.log("Internal Server Error: ", error.message);
