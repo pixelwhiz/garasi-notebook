@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc8d0fda-aee7-46a7-b675-13f9b85fb213" name="Changes" comment="." />
+    <list default="true" id="fc8d0fda-aee7-46a7-b675-13f9b85fb213" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/router/DashboardRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/DashboardRoutes.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +131,7 @@
       <workItem from="1701350873935" duration="4457000" />
       <workItem from="1701398154971" duration="595000" />
       <workItem from="1701408756834" duration="10908000" />
-      <workItem from="1701484220366" duration="9773000" />
+      <workItem from="1701484220366" duration="9954000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
