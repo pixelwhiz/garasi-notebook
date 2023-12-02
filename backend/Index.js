@@ -48,7 +48,9 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use("/api", router);
-app.get("/", res.send({ status: true, message: "Welcome" }));
+app.get("/", async (req, res) => {
+    res.send({ status: true, message: "Welcome" });
+});
 
 const PORT = 3000;
 app.listen(PORT, () => {
