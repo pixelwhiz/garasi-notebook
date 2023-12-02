@@ -50,6 +50,7 @@ app.use(cookieParser());
 app.use("/api", router);
 app.get("/", async (req, res) => {
     res.send({ status: true, message: "Welcome" });
+    console.log("Welcome");
 });
 
 const PORT = 3000;
