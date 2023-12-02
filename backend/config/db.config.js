@@ -1,10 +1,10 @@
 module.exports = {
-    HOST: "localhost",
+    HOST: "127.0.0.1",
     USER: "root",
     PASSWORD: "",
     DB: "garasinotebook",
     DIALECT: "mysql",
-    PORT: 33361,
+    PORT: 33060,
     pool: {
         max: 5,
         min: 0,
