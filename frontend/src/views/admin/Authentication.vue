@@ -99,6 +99,11 @@ import Store from "../../store/index.js";
 import {mapActions} from "vuex";
 import {tr} from "vuetify/locale";
 
+axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+axios.defaults.headers.common['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS, PUT, PATCH, DELETE';
+axios.defaults.headers.common['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization';
+
 export default {
   name: "Authentication",
   components: {Dialog, Footer, EyeIcon, EyeSlashIcon, UsersIcon},
