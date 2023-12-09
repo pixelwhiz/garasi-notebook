@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://garasinotebook.biz.id/",
   "scripts": {
     "build": "vite build",
     "dev": "vite",

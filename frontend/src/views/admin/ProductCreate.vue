@@ -17,7 +17,7 @@ export default {
       <div class="ms-60" :class="{  }">
         <Navbar />
       </div>
-      <div class="ms-64 me-5" :class="{  }">
+      <div class="ms-64 me-5 pb-52" :class="{  }">
         <ProductCreateLayout />
       </div>
       <div class="ms-60">

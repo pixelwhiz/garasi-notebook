@@ -23,4 +23,8 @@ export default {
 
 <style scoped>
 
+
+div {
+  font-family: 'Exo 2', sans-serif;
+}
 </style>

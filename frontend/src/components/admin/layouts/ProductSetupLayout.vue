@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-5 flex justify-between ms-3">
+  <div class="mt-5 animate-slide-in-down flex justify-between ms-3">
     <button @click="routeToProduct" class="text-white mt-1 flex gap-3">
       <svg class="fill-white mt-1" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
       Back
@@ -15,7 +15,7 @@
       </ul>
     </div>
   </div>
-  <div class="ms-3 flex my-5 justify-between">
+  <div class="ms-3 animate-slide-in-down flex my-5 justify-between">
     <label class="product text-white flex gap-3">
       <span class="mt-2">
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="white"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" fill="white"/></svg>
@@ -29,12 +29,12 @@
       </button>
     </div>
   </div>
-  <div class="productlayout ms-3 mt-5 card bg-base-content/10">
+  <div class="productlayout animate-slide-in-down ms-3 mt-5 card bg-base-content/10">
     <div class="flex justify-between">
       <label class="font-bold">Product of <span class="">{{ this.categoryname }}</span></label>
     </div>
   </div>
-  <div class="ms-3 mb-5 h-96 overflow-y-auto shadow-base-content/50 shadow-md">
+  <div class="ms-3 animate-slide-in-down mb-5 h-96 overflow-y-auto shadow-base-content/50 shadow-md">
     <table class="table table-md bg-base-content/20">
       <thead>
       <tr class="border-0">

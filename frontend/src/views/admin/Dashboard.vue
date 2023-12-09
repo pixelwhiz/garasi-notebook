@@ -23,7 +23,7 @@ export default {
       <div class="ms-60" :class="{  }">
         <Navbar />
       </div>
-      <div class="ms-64 me-5" :class="{  }">
+      <div class="ms-64 h-screen me-5" :class="{  }">
         <DashboardLayout />
       </div>
       <div class="ms-60">

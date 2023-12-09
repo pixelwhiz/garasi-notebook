@@ -1,6 +1,6 @@
 <template>
   <div class="login bg-base-content/10 h-screen">
-    <div class="card xl:mx-96 lg:mx-52 md:mx-24 mx-0 card-sider">
+    <div class="card animate-slide-in-down xl:mx-96 lg:mx-52 md:mx-24 mx-0 card-sider">
       <div class="card-body xl:px-10 lg:px-10 md:px-10 px-5 shadow-success/50 shadow shadow-lg py-10 pt-10 mt-20 mb-32 bg-base-100" style="border-radius: 0rem;">
         <div class="form-control w-full">
           <label class="label-text text-base-content/100 label uppercase font-bold">Email Address</label>
@@ -99,11 +99,6 @@ import Store from "../../store/index.js";
 import {mapActions} from "vuex";
 import {tr} from "vuetify/locale";
 
-axios.defaults.baseURL = 'http://localhost:3000';
-axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
-axios.defaults.headers.common['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS, PUT, PATCH, DELETE';
-axios.defaults.headers.common['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization';
-
 export default {
   name: "Authentication",
   components: {Dialog, Footer, EyeIcon, EyeSlashIcon, UsersIcon},
@@ -126,7 +121,7 @@ export default {
       this.loginLabel = '';
       this.isLoading = true;
       try {
-        const response = await axios.post("http://localhost:3000/api/admin/login", {
+        const response = await axios.post(Config.POST_ADMIN_LOGIN, {
           email: this.email,
           password: this.password
         });

@@ -34,7 +34,7 @@ export default {
 </script>
 
 <template>
-  <div class="ms-3 flex my-5 justify-between">
+  <div class="ms-3 animate-slide-in-down flex my-5 justify-between">
     <label class="dashboard text-white flex gap-3">
       <span class="mt-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" stroke="currentColor" class="text-white">
@@ -52,7 +52,7 @@ export default {
       </ul>
     </div>
   </div>
-  <div class="grid gap-5">
+  <div class="grid animate-slide-in-down gap-5">
     <div class="ms-3 flex justify-between gap-5">
 
       <div class="card dashboardlayout border-0">

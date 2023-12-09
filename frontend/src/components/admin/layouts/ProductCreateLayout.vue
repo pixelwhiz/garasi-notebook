@@ -14,6 +14,7 @@ export default {
       category_data: [],
       categoryname: '',
       addProduct: {
+        id: uuidv4(),
         name: '',
         category: '',
         price: '',
@@ -73,47 +74,51 @@ export default {
       }
     },
 
-    async uploadImages() {
-      const formData = new FormData();
-      this.imagePreviews.forEach((image) => {
-        formData.append('images', image);
-      });
-
-      const response = await axios.post(Config.UPLOAD_IMAGES_URL, formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
-
-      return response.data.imageUrls;
-    },
-
     async CreateItem() {
       try {
-        if (!/^[0-9.,]+$/.test(this.addProduct.price)) {
-          return;
-        }
+        const formData = new FormData();
+        formData.append('id', uuidv4());
+        formData.append('productId', this.addProduct.id);
 
-        const imageUrls = await this.uploadImages();
-        const response = await axios.post(Config.POST_CREATE_NEW_PRODUCT, {
-          id: uuidv4(),
-          name: this.addProduct.name,
-          price: this.addProduct.price,
-          category: this.addProduct.category,
-          condition: this.addProduct.condition,
-          description: this.addProduct.description,
-          imageUrls: imageUrls,
+        // Iterate through imagePreviews and append each file to formData
+        this.imagePreviews.forEach((file, index) => {
+          formData.append(`images[${index}]`, file);
         });
 
-        if (response.status === 200) {
-          alert("success");
-          window.location.href = `${Config.ROUTE_TO_PRODUCTSETUP_LAYOUT}${this.$route.params.categoryId}`;
+        // Upload images
+        const imageResponse = await axios.post(Config.POST_CREATE_IMAGE_BY_PRODUCT_ID, formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        });
+
+        if (imageResponse.status === 200) {
+          // If image upload is successful, proceed to create the product
+          if (!/^[0-9.,]+$/.test(this.addProduct.price)) {
+            return;
+          }
+
+          const productResponse = await axios.post(Config.POST_CREATE_NEW_PRODUCT, {
+            id: this.addProduct.id,
+            name: this.addProduct.name,
+            price: this.addProduct.price,
+            category: this.addProduct.category,
+            condition: this.addProduct.condition,
+            description: this.addProduct.description,
+          });
+
+          if (productResponse.status === 200) {
+            alert("Success");
+            window.location.href = `${Config.ROUTE_TO_PRODUCTSETUP_LAYOUT}${this.$route.params.categoryId}`;
+          }
         }
 
       } catch (err) {
         console.log("Internal Server Error: ", err.message);
       }
     },
+
+
 
     Cancel(){
       this.addProduct.name = '';
@@ -187,7 +192,6 @@ export default {
     },
     removeImage(index) {
       this.imagePreviews.splice(index, 1);
-      // Anda dapat menambahkan logika di sini untuk menghapus gambar di server jika diperlukan.
     },
   },
 }
@@ -195,7 +199,7 @@ export default {
 </script>
 
 <template>
-  <div class="mt-5 flex justify-between ms-3">
+  <div class="mt-5 animate-slide-in-down flex justify-between ms-3">
     <button @click="routeToProductSetup" class="text-white mt-1 flex gap-3">
       <svg class="fill-white mt-1" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
       Back
@@ -212,22 +216,16 @@ export default {
       </ul>
     </div>
   </div>
-  <div class="ms-3 flex my-5 justify-between">
+  <div class="ms-3 animate-slide-in-down flex my-5 justify-between">
     <label class="product text-white flex gap-3">
       <span class="mt-2">
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="white"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" fill="white"/></svg>
       </span>
       Add Product
     </label>
-    <div class="">
-      <div class="flex gap-3 justify-end">
-        <button @click="Cancel" class="bg-base-content/5 btn hover:bg-base-content/5 normal-case border-0 text-white font-normal" style="font-size: 1rem;">Cancel</button>
-        <button @click="CreateItem" :class="{ 'bg-success hover:bg-success text-white': isAddProductValid }" class="no-animation bg-base-content/5 hover:bg-base-content/5 btn normal-case border-0 text-base-content font-normal" style="font-size: 1rem;">Add Product</button>
-      </div>
-    </div>
   </div>
 
-  <div class="bg-base-content/5 layouts shadow-base-content/50 shadow-md ms-3 mb-10 h-96 overflow-y-auto">
+  <div class="bg-base-content/5 animate-slide-in-down layouts shadow-base-content/50 shadow-md ms-3 h-96 overflow-y-auto">
     <div class="card card-body -mt-6 -ms-4 h-full">
       <div class="flex flex-col lg:flex-row gap-10 p-2">
         <div class="grid gap-3 w-full lg:w-96">
@@ -240,7 +238,7 @@ export default {
             <label class="text-base-content/100 font-normal">Price</label>
             <div class="flex gap-3">
               <div class="input-container w-96">
-                <div class="currency-symbol text-white absolute ms-3" :class="{ 'visible': isInputFocused || addProduct.price !== '' }">Rp</div>
+                <div class="currency-symbol text-white -mt-1 absolute ms-3" :class="{ 'visible': isInputFocused || addProduct.price !== '' }">Rp</div>
                 <input v-model="formattedPrice"
                        type="text"
                        placeholder="54,500"
@@ -260,18 +258,14 @@ export default {
                 New
               </option>
               <option>Second</option>
-              <option>No Condition</option>
+              <option>Normal</option>
             </select>
           </div>
         </div>
 
         <div class="grid gap-5 w-full">
-          <div class="grid gap-3">
-            <label class="text-base-content/100 font-normal">Description</label>
-            <textarea v-model="addProduct.description" placeholder="" class="textarea bg-base-content/5 textarea-bordered textarea-lg w-full" ></textarea>
-          </div>
           <div class="grid">
-            <label class="text-base-content/100 font-normal">Add Images</label>
+            <label class="text-base-content/100 font-normal">Add Image</label>
             <div class="container mx-auto">
               <input
                   type="file"
@@ -288,11 +282,12 @@ export default {
                       :key="index"
                       class="relative mr-4"
                   >
-                    <img :src="preview" alt="Preview" class="w-20 h-20 object-cover" />
+                    <img :src="imagePreviews" alt="Preview" class="w-20 h-20 object-cover" />
                     <button
                         @click="removeImage(index)"
-                        class="absolute top-0 right-0 p-1 bg-red-500 text-white rounded-full"
+                        class="absolute bg-transparent top-0 right-0 p-1  text-white rounded-full"
                     >
+                      <svg class="fill-red-500" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                       <i class="fas fa-times"></i>
                     </button>
                   </div>
@@ -302,6 +297,21 @@ export default {
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="bg-base-content/5 animate-slide-in-down layouts shadow-base-content/50 shadow-md ms-3 h-96 mt-10">
+    <div class="card-body card">
+      <div class="grid gap-3">
+        <label class="text-base-content/100 font-normal">Description</label>
+        <textarea v-model="addProduct.description" placeholder="" class="textarea h-72 bg-base-content/5 text-white px-5 py-2 textarea-bordered textarea-lg w-full" style="white-space: pre-line;"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-10">
+    <div class="flex gap-3 justify-end">
+      <button @click="Cancel" class="bg-base-content/5 btn hover:bg-base-content/5 normal-case border-0 text-white font-normal" style="font-size: 1rem;">Cancel</button>
+      <button @click="CreateItem" :class="{ 'bg-success hover:bg-success text-white': isAddProductValid }" class="no-animation bg-base-content/5 hover:bg-base-content/5 btn normal-case border-0 text-base-content font-normal" style="font-size: 1rem;">Add Product</button>
     </div>
   </div>
 
