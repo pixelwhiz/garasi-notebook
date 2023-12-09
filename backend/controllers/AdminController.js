@@ -5,19 +5,20 @@ const jwt = require("jsonwebtoken");
 exports.login = async (req, res) => {
     try {
         const { email, password } = req.body;
+        const ip = req.connection.remoteAddress;
+
         if (email === process.env.ADMIN_EMAIL_LOGIN && password === process.env.ADMIN_PASSWORD_LOGIN) {
-            const ip = req.connection.remoteAddress;
             const token = jwt.sign({ ip }, process.env.JWT_SECRET_KEY);
             res.cookie('jwt', token, { httpOnly: true, maxAge: 24 * 60 * 60 * 1000 });
             res.status(200).json({ status: true, message: "Login Berhasil!", token: true });
-            console.log(`${ip} is Connnected`);
+            console.log(`${ip} is Connected`);
         } else {
-            res.status(401).send({ status: false, message: "Invalid Credentials" });
-            console.log(`${ip} is failed to Logged In`);
+            res.status(401).json({ status: false, message: "Invalid Credentials" });
+            console.log(`${ip} failed to Log In`);
         }
     } catch (error) {
         console.log("Internal Server Error: ", error.message);
-        res.status(500).send({ status: false, message: "Internal Server Error" });
+        res.status(500).json({ status: false, message: "Internal Server Error" });
     }
 };
 

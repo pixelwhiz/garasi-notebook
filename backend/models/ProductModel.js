@@ -2,12 +2,12 @@ const { Sequelize, DataTypes} = require("sequelize");
 
 module.exports = (sequelize, Sequelize) => {
     const ProductModel = sequelize.define("product", {
-        id: { type: Sequelize.UUID, defaultValue: Sequelize.UUIDV4, primaryKey: true, allowNull: false },
+        id: { type: Sequelize.UUIDV4, defaultValue: Sequelize.UUIDV4, primaryKey: true, allowNull: false },
         name: { type: Sequelize.STRING, allowNull: false },
         price: { type: Sequelize.STRING, allowNull: false },
-        description: { type: Sequelize.STRING, allowNull: false },
+        description: { type: Sequelize.TEXT, allowNull: false },
+        condition: { type: Sequelize.STRING, allowNull: false },
         category: { type: Sequelize.STRING, allowNull: false },
-        imageUrls: { type: DataTypes.JSON, allowNull: true},
         createdAt: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.NOW },
         updatedAt: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.NOW },
     }, {

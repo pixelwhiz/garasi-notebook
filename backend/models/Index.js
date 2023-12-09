@@ -19,7 +19,7 @@ const db = {};
 db.sequelize = Sequelize;
 db.sequelize = sequelize;
 
-//sequelize.sync();
+sequelize.sync();
 
 db.product = require("./ProductModel")(sequelize, Sequelize);
 db.category = require("./CategoryModel")(sequelize, Sequelize);

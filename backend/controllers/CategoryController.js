@@ -1,6 +1,6 @@
 const db = require("../models/Index");
 const {randomUUID, randomInt} = require("crypto");
-const {Sequelize, DataTypes, UUIDV4} = require("sequelize");
+const {Sequelize, DataTypes, UUIDV4, sequelize} = require("sequelize");
 const Category = db.category;
 const Product = db.product;
 const {Op} = require("sequelize");
@@ -56,45 +56,30 @@ exports.delete = async (req, res) => {
         const { id } = req.body;
         const existingCategory = await Category.findOne({
             where: {
-                id: {
-                    [Op.eq]: id,
-                },
+                id: id,
             },
         });
+
         if (!existingCategory) {
             return res.status(404).send({ status: false, message: "Category not found!" });
         }
 
         await Category.destroy({
-           where: {
-               id: {
-                   [Op.eq]: id,
-               },
-           },
-        });
-
-        const productToDelete = await Product.findAll({
             where: {
-                name: existingCategory.name,
+                id: id,
             },
         });
 
-        await Promise.all(productToDelete.map(async (Product) => {
-            try {
-                await Product.destroy({
-                    where: {
-                        name: existingCategory.name,
-                    },
-                });
-            } catch (err) {
-                console.log("Internal Server Error: ", err.message);
-            }
-        }));
+        await Product.destroy({
+            where: {
+                category: existingCategory.name,
+            },
+        });
 
-        res.status(200).send({ status: true, message: `Successfully deleted Category` });
+        res.status(200).send({ status: true, message: `Successfully deleted Category and associated Products` });
     } catch (err) {
         res.status(500).send({ status: false, message: "Internal Server Error" });
-        console.log("Internal Server Error: ", err.message);
+        console.error("Internal Server Error: ", err.message);
     }
 };
 

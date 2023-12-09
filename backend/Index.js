@@ -22,25 +22,19 @@ app.use(session({
 }));
 
 const dotenv = require("dotenv");
-
 dotenv.config();
 
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", process.env.SERVER_ADDRESS);
-    res.header("Access-Control-Allow-Credentials", true);
-    res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
-
-app.use("/api", cors({
+app.use(cors({
     origin: process.env.SERVER_ADDRESS,
     credentials: true,
+    optionSuccessStatus: 200,
     methods: ["GET", "POST", "PUT", "DELETE"],
 }));
+
+app.options('*', cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
