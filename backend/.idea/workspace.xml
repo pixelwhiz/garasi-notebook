@@ -5,191 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc8d0fda-aee7-46a7-b675-13f9b85fb213" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3e59aff8-cf09-4b7c-b873-b4e0e14d1bdf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3e59aff8-cf09-4b7c-b873-b4e0e14d1bdf/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3e59aff8-cf09-4b7c-b873-b4e0e14d1bdf/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3e59aff8-cf09-4b7c-b873-b4e0e14d1bdf/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3e59aff8-cf09-4b7c-b873-b4e0e14d1bdf/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42a9b65c-68f2-4ee7-92b4-8f162eac60d4/storage_v2/_src_/schema/garasinotebook.eu_4Ag.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/AdminController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/AdminController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/CategoryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/CategoryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/DashboardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/DashboardController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/ProductController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ProductController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702314989620_742ed6ab-9eda-42b9-83c0-dfddcd5281b0_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702314989624_74020c31-f505-416a-8059-2c5610246f49_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702314989629_76d2c1c3-e1ae-4e35-a0f5-8697bf0b961a_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702314989630_26342aa9-5e90-442d-b009-447d23dd4405_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702318478379_189214f0-6f24-4e5d-a555-1e2fa0da8c44_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702318478382_707bab91-2d39-4bd4-8281-79780a731e62_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702494129843_c120cabb-a659-4e19-99c3-6286dae4f670_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702494218501_7b5bebad-d743-48c3-be0a-e1d7f8ebc681_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702494270751_c5a8b83d-3aa4-42ef-b978-823c6ea1d495_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702506678154_9936fdec-e207-44de-a1b6-382a9ce83425_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702533095519_226c9195-9c15-4ba8-93f8-e82fbb470b3b_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702538082836_6ca8a0aa-65fc-4756-bf63-d477bb28af7e_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702538437648_ecc50bd3-30ab-4c8d-bc19-59ee6de170da_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702538959540_d84a5ce3-cfbe-4b4b-8467-6f51c3448fdb_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702539415530_ce16d4c7-aad9-4aa7-8ff7-a32188b9cf1a_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702539607585_5679d6de-7099-4842-bbaf-479e859414b3_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702608748760_34f0f5f4-f1a4-4462-86f6-1f073292367f_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702618890789_648d92e5-5ea1-4818-a06c-3bc7a357e100_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702619587173_f22d891a-0ced-41d3-b7e9-99992dd2cf12_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702619597906_835efb51-54c8-44b4-9103-b8325b006ad5_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/Laptop/images_1702619678314_e6bfd67f-822b-45d7-ad98-49cea089751b_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702237910067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702237910068.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702237910070.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702237910071.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238038370.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238038372.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238038373.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238038374.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238038375.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238411380.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238411383.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238411385.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238411387.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238411389.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238445246.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238445247.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238445248.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238445250.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/img/images_1702238445253.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/ImageModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ImageModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/ProductModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ProductModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsc.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsc.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsserver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsserver.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsserver.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/process.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/globals.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/globals.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/process.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/stream.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/stream.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/util.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/util.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/util.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/util.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lru-cache/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lru-cache/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lru-cache/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lru-cache/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lru-cache/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lru-cache/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lru-cache/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/sqlstring/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/sqlstring/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/sqlstring/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/sqlstring/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/sqlstring/lib/SqlString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/sqlstring/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index-cjs.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index-cjs.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index-cjs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index-cjs.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/cjs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/mjs/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/mjs/index.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/mjs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/mjs/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/mjs/index.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/mjs/index.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/dist/mjs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql2/node_modules/lru-cache/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sqlstring/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sqlstring/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sqlstring/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sqlstring/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sqlstring/lib/SqlString.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sqlstring/lib/SqlString.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sqlstring/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sqlstring/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/ThirdPartyNoticeText.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/bin/tsc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/bin/tsserver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/cancellationToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/cs/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/de/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/es/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/fr/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/it/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/ja/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/ko/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.decorators.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.decorators.legacy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.iterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.collection.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.core.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.generator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.iterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.proxy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.reflect.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.symbol.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2016.array.include.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2016.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2016.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.date.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.regexp.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.array.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.symbol.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.bigint.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.date.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.number.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.weakref.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.array.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.error.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.regexp.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.sharedmemory.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2023.array.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2023.collection.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2023.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2023.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es6.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.decorators.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.disposable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.scripthost.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.webworker.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.webworker.importscripts.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.webworker.iterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/pl/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/pt-br/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/ru/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tr/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsserver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsserverlibrary.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsserverlibrary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typesMap.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescript.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typingsInstaller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/watchGuard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/zh-cn/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/zh-tw/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/DashboardRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/DashboardRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/ProductRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/ProductRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -205,6 +84,7 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.2.10\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -226,20 +106,21 @@
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.16.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/daffa/dev/planet/frontend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\daffa\\dev\\planet\\backend\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -253,6 +134,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\daffa\dev\planet\backend\db\img" />
+      <recent name="D:\daffa\dev\planet\backend\public" />
       <recent name="D:\daffa\dev\planet\backend\db" />
     </key>
   </component>
@@ -334,7 +216,23 @@
       <workItem from="1701912613727" duration="22698000" />
       <workItem from="1702009884151" duration="5509000" />
       <workItem from="1702029507310" duration="7721000" />
-      <workItem from="1702084366149" duration="8600000" />
+      <workItem from="1702084366149" duration="11028000" />
+      <workItem from="1702122113308" duration="3658000" />
+      <workItem from="1702193566627" duration="24266000" />
+      <workItem from="1702272744470" duration="10796000" />
+      <workItem from="1702297703456" duration="1075000" />
+      <workItem from="1702308585436" duration="4408000" />
+      <workItem from="1702355801214" duration="31000" />
+      <workItem from="1702373641507" duration="1999000" />
+      <workItem from="1702382466185" duration="3292000" />
+      <workItem from="1702438487398" duration="35490000" />
+      <workItem from="1702530908945" duration="3380000" />
+      <workItem from="1702556195673" duration="1355000" />
+      <workItem from="1702577630762" duration="1521000" />
+      <workItem from="1702605255151" duration="509000" />
+      <workItem from="1702605791716" duration="1288000" />
+      <workItem from="1702608777872" duration="36000" />
+      <workItem from="1702609174250" duration="94000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />

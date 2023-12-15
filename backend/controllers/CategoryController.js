@@ -3,8 +3,12 @@ const {randomUUID, randomInt} = require("crypto");
 const {Sequelize, DataTypes, UUIDV4, sequelize} = require("sequelize");
 const Category = db.category;
 const Product = db.product;
+const Image = db.image;
 const {Op} = require("sequelize");
 const { v4: uuidv4 } = require("uuid");
+const fs = require('fs').promises;
+const fsPromises = require('fs').promises;
+const path = require('path');
 
 exports.create = async (req, res) => {
     try {
@@ -33,6 +37,16 @@ exports.create = async (req, res) => {
                 name: name
             },
         });
+
+        const categoryFolderPath = path.join(__dirname, `../db/img/${name}`);
+
+        try {
+            await fsPromises.mkdir(categoryFolderPath, { recursive: true });
+            console.log("Category folder created successfully");
+        } catch (err) {
+            console.error("Error creating category folder:", err);
+            return res.status(500).send({ status: false, message: "Internal Server Error" });
+        }
 
         if (existingCategoryName) {
             return res.status(401).send({ status: false, message: "Category with that name is Already exists!" });
@@ -64,11 +78,46 @@ exports.delete = async (req, res) => {
             return res.status(404).send({ status: false, message: "Category not found!" });
         }
 
-        await Category.destroy({
+        const productsInCategory = await Product.findAll({
             where: {
-                id: id,
+                category: existingCategory.name,
             },
         });
+
+        const categoryFolderPath = path.join(__dirname, `../db/img/${existingCategory.name}`);
+
+        try {
+            await fsPromises.rmdir(categoryFolderPath, { recursive: true });
+            console.log("Category folder deleted successfully");
+        } catch (err) {
+            console.error("Error deleting category folder:", err);
+        }
+
+        for (const product of productsInCategory) {
+            const images = await Image.findAll({
+                where: {
+                    productId: product.id,
+                },
+            });
+
+            for (const image of images) {
+                const filePath = path.join(__dirname, `../db/img/${existingCategory.name}/${image.filename}`);
+
+                try {
+                    await fsPromises.access(filePath, fsPromises.constants.F_OK);
+                    await fsPromises.unlink(filePath);
+                    console.log("File deleted successfully");
+                } catch (err) {
+                    console.error("Error deleting file:", err);
+                }
+            }
+
+            await Image.destroy({
+                where: {
+                    productId: product.id,
+                }
+            });
+        }
 
         await Product.destroy({
             where: {
@@ -76,10 +125,16 @@ exports.delete = async (req, res) => {
             },
         });
 
+        await Category.destroy({
+            where: {
+                id: id,
+            },
+        });
+
         res.status(200).send({ status: true, message: `Successfully deleted Category and associated Products` });
     } catch (err) {
-        res.status(500).send({ status: false, message: "Internal Server Error" });
         console.error("Internal Server Error: ", err.message);
+        res.status(500).send({ status: false, message: "Internal Server Error" });
     }
 };
 

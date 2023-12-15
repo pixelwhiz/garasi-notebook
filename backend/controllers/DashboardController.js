@@ -48,7 +48,7 @@ exports.addProduct = async (req, res) => {
 
 exports.getAllData = async (req, res) => {
     try {
-        const allProduct = await Category.findAndCountAll();
+        const allProduct = await Product.findAndCountAll();
         const allVisitor = await Dashboard.sum("totalVisitor");
         const allOrder = await Dashboard.sum("totalOrder");
         res.status(200).send({ totalProduct: allProduct, totalVisitor: allVisitor, totalOrder: 1 });
