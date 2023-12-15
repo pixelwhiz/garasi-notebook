@@ -24,7 +24,7 @@ export default {
   computed: {
     currentImage() {
       return this.image_data.length > 0
-          ? `http://localhost:3000/img/${this.categoryname}/${this.image_data[this.currentIndex].filename}`
+          ? `${Config.BACKEND_ADDRESS}/img/${this.categoryname}/${this.image_data[this.currentIndex].filename}`
           : '';
     },
   },
@@ -80,7 +80,7 @@ export default {
     },
 
     showAllImage(imageurls) {
-      this.imageurls = `http://localhost:3000/img/${this.categoryname}/${imageurls}`;
+      this.imageurls = `${Config.BACKEND_ADDRESS}/img/${this.categoryname}/${imageurls}`;
       document.getElementById('image').showModal();
     },
 
@@ -163,7 +163,7 @@ export default {
       </div>
       <div class="flex justify-center w-full gap-5">
         <button v-for="(image, index) in image_data" :key="index" @click="showAllImage(image.filename);" class="hover:-translate-y-1 hover:shadow-base-content shadow hover:rotate-6">
-          <img width="100" class="max-h-20" :src="`http://localhost:3000/img/${this.categoryname}/${image.filename}`">
+          <img width="100" class="max-h-20" :src="`${Config.BACKEND_ADDRESS}/img/${this.categoryname}/${image.filename}`">
         </button>
       </div>
     </div>
