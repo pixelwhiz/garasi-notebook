@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-base-300 ps-7 pe-3.5 sm:ps-16 sm:pe-12 lg:ps-28 lg:pe-24 pb-96 pt-10">
+  <div class="bg-base-300 ps-7 pe-3.5 sm:ps-16 sm:pe-12 lg:ps-28 min-h-screen lg:pe-24 pb-96 pt-10">
     <div class="flex pb-4">
       <label class="font-normal animate-slide-in-down mt-4 flex gap-2 text-xl md:text-2xl lg:text-3xl text-white">
-        <svg class="fill-white mt-1" xmlns="http://www.w3.org/2000/svg" height="1.5rem" width="1.5rem" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z"/></svg>
+        <svg class="fill-white mt-1.5" xmlns="http://www.w3.org/2000/svg" height="1.5rem" width="1.5rem" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z"/></svg>
         List Items of <span class="text-primary font-bold">{{ this.categoryname }}</span>
       </label>
     </div>
@@ -14,7 +14,7 @@
       <div class="flex flex-wrap justify-start sm:gap-0 lg:gap-3" v-else>
         <div v-for="product in product_data" :key="product.id" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4">
           <div class="card px-3 pt-3 bg-base-200 animate-slide-in-down card-compact border-transparent w-full bg-base-100">
-            <figure><img class="w-full h-full object-cover" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <figure><img class="w-full h-full object-cover" :src="product.image" alt="Shoes" /></figure>
             <div class="px-3 py-3">
               <h1 class="card-title text-white text-start font-normal clamp-2" style="font-size: 1rem;">{{ product.name }}</h1>
               <div class="badge flex justify-start my-3 badge-ghost badge-outline">{{ product.condition }}</div>
@@ -86,7 +86,7 @@ export default {
         const response = await axios.post(Config.POST_GET_ALL_PRODUCT_BY_CATEGORY, {
           category: this.categoryname,
         });
-        this.product_data = response.data;
+        this.product_data = response.data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).reverse();
       } catch (err) {
         console.log("Internal Server Error: ",err.message);
       }

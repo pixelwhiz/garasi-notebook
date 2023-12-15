@@ -1,6 +1,6 @@
 <template>
   <div class="login bg-base-content/10 h-screen">
-    <div class="card animate-slide-in-down xl:mx-96 lg:mx-52 md:mx-24 mx-0 card-sider">
+    <div class="card animate-slide-in-down xl:mx-96 lg:mx-52 md:mx-24 -ms-10 -me-10 card-sider">
       <div class="card-body xl:px-10 lg:px-10 md:px-10 px-5 shadow-success/50 shadow shadow-lg py-10 pt-10 mt-20 mb-32 bg-base-100" style="border-radius: 0rem;">
         <div class="form-control w-full">
           <label class="label-text text-base-content/100 label uppercase font-bold">Email Address</label>

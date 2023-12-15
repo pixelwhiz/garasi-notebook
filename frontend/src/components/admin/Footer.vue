@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="py-6 animate-slide-in-down w-full bg-base-content/10">
+  <div class="py-6 animate-slide-in-down w-full bg-base-content/10 bottom-0">
     <label class="ms-3 font-light text-base-content/100">© Copyright 2023 Garasi Notebook. All Rights Reserved.</label>
   </div>
 </template>

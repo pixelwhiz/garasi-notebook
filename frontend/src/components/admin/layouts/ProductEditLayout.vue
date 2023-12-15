@@ -8,7 +8,12 @@ export default {
 
   data() {
     return {
+      formData: new FormData(),
       imagePreviews: [],
+      imagePreview: [],
+      showSuccessAlert: false,
+      showErrorAlert: false,
+      error_response: '',
       category_data: [],
       categoryname: '',
       productname: '',
@@ -20,13 +25,13 @@ export default {
         description: '',
       },
       isInputFocused: true,
+      imageurls: '',
     }
   },
 
-  async beforeMount() {
-    await this.getCategoryNameById();
-    await this.getProductNameById();
-    await this.getProductByCategory();
+  async created() {
+    await this.fetchProductById();
+    await this.fetchAllImageByProductId();
   },
 
   async beforeRouteEnter() {
@@ -35,12 +40,15 @@ export default {
     await this.getProductByCategory();
   },
 
-  async created() {
-    await this.fetchProductById();
-  },
-
   async mounted() {
     await this.fetchProductById();
+    await this.fetchAllImageByProductId();
+  },
+
+  async beforeMount() {
+    await this.getCategoryNameById();
+    await this.getProductNameById();
+    await this.getProductByCategory();
   },
 
   computed: {
@@ -70,6 +78,22 @@ export default {
   },
 
   methods: {
+    async fetchAllImageByProductId() {
+      try {
+        const response = await axios.post(Config.POST_GET_IMAGE_BY_PRODUCT_ID, {
+          id: this.$route.params.productId,
+        });
+
+        this.imagePreviews = response.data.images.map(image => ({
+          file: image.filename,
+          dataURL: `${Config.BACKEND_ADDRESS}/img/${this.categoryname}/${image.filename}`,
+        })).reverse();
+
+      } catch (err) {
+        console.log("Internal Server Error: ", err.message);
+      }
+    },
+
     async fetchProductById() {
       try {
         const response = await axios.post(Config.POST_GET_PRODUCT_BY_ID, {
@@ -86,6 +110,11 @@ export default {
 
     routeToProductSetup() {
       this.$router.push(`/admin/product/setup/${this.$route.params.categoryId}`);
+    },
+
+    showImage(imageurls) {
+      this.imageurls = imageurls;
+      document.getElementById('image').showModal();
     },
 
     async getCategoryNameById() {
@@ -157,44 +186,60 @@ export default {
 
     handleFileChange(event) {
       const files = event.target.files;
-      const totalFiles = this.imagePreviews.length + files.length;
-
       for (let i = 0; i < files.length; i++) {
         const reader = new FileReader();
         reader.onload = (e) => {
-          this.imagePreviews.push(e.target.result);
+          this.imagePreviews.push({
+            file: files[i],
+            dataURL: e.target.result,
+          });
         };
         reader.readAsDataURL(files[i]);
       }
     },
+
     removeImage(index) {
       this.imagePreviews.splice(index, 1);
     },
 
     async EditItem() {
       try {
-        if (!/^[0-9.,]+$/.test(this.product.price)) {
-          return;
+        const formData = new FormData();
+        formData.append('id', this.$route.params.productId);
+        formData.append('name', this.product.name);
+        formData.append('price', this.product.price);
+        formData.append('category', this.categoryname);
+        formData.append('condition', this.product.condition);
+        formData.append('description', this.product.description);
+        for (let i = 0; i < this.imagePreviews.length; i++) {
+          formData.append('images', this.imagePreviews[i].file);
+          console.log(this.imagePreviews[i].file);
         }
 
-        const response = await axios.post(Config.POST_EDIT_PRODUCT, {
-          id: this.$route.params.productId,
-          name: this.product.name,
-          price: this.product.price,
-          category: this.product.category,
-          condition: this.product.condition,
-          description: this.product.description,
+        const response = await axios.post(Config.POST_EDIT_PRODUCT, formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
         });
 
         if (response.status === 200) {
-          alert("success");
-          window.location.href = `${Config.ROUTE_TO_PRODUCTSETUP_LAYOUT}${this.$route.params.categoryId}`;
+          this.showErrorAlert = false;
+          this.showSuccessAlert = true;
+          setTimeout(() => {
+            window.location.href = `${Config.SERVER_ADDRESS}/admin/product/setup/${this.$route.params.categoryId}`;
+          }, 2500);
+        } else {
+          this.showSuccessAlert = false;
+          this.showErrorAlert = true;
+          this.error_response = response.data.message;
         }
-
-      } catch (err) {
-        console.log("Internal Server Error: ", err.message);
+      } catch (error) {
+        this.showSuccessAlert = false;
+        this.showErrorAlert = true;
+        this.error_response = error.message;
       }
     },
+
 
   },
 }
@@ -227,7 +272,26 @@ export default {
       Edit <span class="text-success font-bold">{{ this.productname }}</span>
     </label>
   </div>
-
+  <div v-if="showSuccessAlert" role="alert" class="fixed top-0 z-10 animate-slide-in-down alert alert-success text-white border-0 py-3" style="border-radius: 0rem; width: 74rem;">
+  <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+  <span>Product '{{ this.product.name }}' was updated successfully</span>
+  <button @click="this.showSuccessAlert = false;" class="ml-4 animate-pulse text-white font-bold">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+  </button>
+  </div>
+  <div v-if="showErrorAlert" role="alert" class="fixed top-0 z-10 animate-slide-in-down alert alert-error text-white border-0 py-3" style="border-radius: 0rem; width: 74rem;">
+    <svg class="stroke-current shrink-0 fill-white h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+    <span>Error: '{{ this.error_response }}'</span>
+    <button @click="this.showErrorAlert = false;" class="ml-4 animate-pulse text-white font-bold">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
   <div class="bg-base-content/5 animate-slide-in-down layouts shadow-base-content/50 shadow-md ms-3 h-96 overflow-y-auto">
     <div class="card card-body -mt-6 -ms-4 h-full">
       <div class="flex flex-col lg:flex-row gap-10 p-2">
@@ -261,43 +325,32 @@ export default {
                 New
               </option>
               <option>Second</option>
-              <option>No Condition</option>
+              <option>Normal</option>
             </select>
           </div>
         </div>
 
-        <div class="grid gap-5 w-full">
-          <div class="grid">
+        <div class="grid w-full">
+          <div class="grid gap-3">
             <label class="text-base-content/100 font-normal">Product Image</label>
-            <div class="container mx-auto">
-              <input
-                  type="file"
-                  id="upload"
-                  ref="fileInput"
-                  class="mt-5 mb-4 p-2 border border-gray-300 rounded-md"
-                  @change="handleFileChange"
-                  multiple
-              />
-              <div class="mx-auto bg-base-content/5 p-3 shadow-md">
-                <div v-if="imagePreviews.length > 0" class="flex flex-wrap">
-                  <div
-                      v-for="(preview, index) in imagePreviews"
-                      :key="index"
-                      class="relative mr-4"
-                  >
-                    <img :src="preview" alt="Preview" class="w-20 h-20 object-cover" />
-                    <button
-                        @click="removeImage(index)"
-                        class="absolute top-0 right-0 p-1 bg-red-500 text-white rounded-full"
-                    >
-                      <i class="fas fa-times"></i>
-                    </button>
-                  </div>
+            <div class="mx-auto bg-base-content/5 border-base-content/25 overflow-y-auto border w-full h-52 py-3 px-3 shadow-md">
+              <div class="flex flex-wrap">
+                <div v-for="(image, index) in imagePreviews" :key="index" class="relative mr-4">
+                  <button @click="showImage(image.dataURL)">
+                    <img :src="image.dataURL" alt="Preview" class="w-20 h-20 object-cover" />
+                  </button>
+                  <button @click="removeImage(index)" class="absolute bg-transparent top-0 right-0 p-1 text-white rounded-full">
+                    <svg class="fill-red-500" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                    <i class="fas fa-times"></i>
+                  </button>
                 </div>
               </div>
             </div>
+            <input type="file" id="upload" ref="fileInput" class="border-base-content/25 bg-base-content/5 border py-2 px-3" @change="handleFileChange" name="images" multiple/>
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
@@ -313,9 +366,20 @@ export default {
   <div class="mt-10 animate-slide-in-down mb-20">
     <div class="flex gap-3 justify-end">
       <button @click="Cancel" class="bg-base-content/5 btn hover:bg-base-content/5 normal-case border-0 text-white font-normal" style="font-size: 1rem;">Cancel</button>
-      <button @click="EditItem" :class="{ 'bg-success hover:bg-success text-white': isproductValid }" class="no-animation bg-base-content/5 hover:bg-base-content/5 btn normal-case border-0 text-base-content font-normal" style="font-size: 1rem;">Save Changes</button>
+      <button @click="EditItem" :class="{ 'bg-success hover:bg-success text-white': isproductValid }" class="no-animation bg-base-content/5 hover:bg-base-content/5 btn normal-case border-0 text-base-content font-normal" style="font-size: 1rem;">
+        <svg class="h-6 w-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V173.3c0-17-6.7-33.3-18.7-45.3L352 50.7C340 38.7 323.7 32 306.7 32H64zm0 96c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V128zM224 288a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+        Save Changes</button>
     </div>
   </div>
+
+  <dialog id="image" class="modal">
+    <div class="modal-box modal-middle bg-transparent w-11/12 max-w-5xl">
+      <img class="w-full h-full" :src="this.imageurls">
+    </div>
+    <form method="dialog" class="modal-backdrop bg-black">
+      <button>close</button>
+    </form>
+  </dialog>
 
 </template>
 

@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <footer class="footer animate-slide-in-down footer-center p-10 bg-base-100 text-base-content rounded">
+  <footer class="footer bottom-0 animate-slide-in-down footer-center p-10 bg-base-100 text-base-content rounded">
     <nav class="grid grid-flow-col gap-4">
       <a class="link link-hover">About us</a>
       <a class="link link-hover">Contact</a>

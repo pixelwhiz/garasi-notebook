@@ -26,7 +26,6 @@ export default {
 
   created() {
     this.check();
-    this.addVisitor();
   },
 
   methods: {

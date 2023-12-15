@@ -9,12 +9,24 @@ export default {
     return {
       categoryname: '',
       productname: '',
+      imageurls: '',
+      image_data: [],
+      currentIndex: 0,
       product: {
         description: '',
         condition: '',
         price: '',
+        image: '',
       },
     }
+  },
+
+  computed: {
+    currentImage() {
+      return this.image_data.length > 0
+          ? `http://localhost:3000/img/${this.categoryname}/${this.image_data[this.currentIndex].filename}`
+          : '';
+    },
   },
 
   async mounted() {
@@ -37,6 +49,8 @@ export default {
         const response = await axios.post(Config.POST_GET_IMAGE_BY_PRODUCT_ID, {
           id: this.$route.params.productId,
         });
+        this.image_data = response.data.images;
+        console.log(response.data);
       } catch (err) {
         console.log("Internal Server Error: ", err.message);
       }
@@ -54,9 +68,27 @@ export default {
         this.product.description = response.data.description;
         this.product.price = response.data.price;
         this.product.condition = response.data.condition;
+        this.product.image = response.data.image;
       } catch (err) {
         console.log("Internal Server Error: ", err.message);
       }
+    },
+
+    showImage(imageurls) {
+      this.imageurls = imageurls;
+      document.getElementById('images').showModal();
+    },
+
+    showAllImage(imageurls) {
+      this.imageurls = `http://localhost:3000/img/${this.categoryname}/${imageurls}`;
+      document.getElementById('image').showModal();
+    },
+
+    prevSlide() {
+      this.currentIndex = (this.currentIndex - 1 + this.image_data.length) % this.image_data.length;
+    },
+    nextSlide() {
+      this.currentIndex = (this.currentIndex + 1) % this.image_data.length;
     },
 
     async getProductNameById() {
@@ -102,8 +134,8 @@ export default {
     <div class="flex flex-col gap-5 pb-5 lg:flex-row">
       <div class="card-body animate-slide-in-down hover:shadow-white shadow card justify-center bg-base-200/100 lg:flex lg:w-1/3">
         <div class="grid">
-          <button class="hover:-translate-y-2.5">
-            <img src="../../../assets/img/upload.png" class="max-w-full w-96 h-96 rounded-lg shadow-2xl" />
+          <button @click="showImage(product.image)">
+            <img :src="product.image" class="max-w-full max-h-full rounded-lg shadow-2xl" />
           </button>
         </div>
       </div>
@@ -113,9 +145,9 @@ export default {
             <label class="text-success/75 font-extrabold uppercase" style="font-size: 0.75rem;">{{ this.categoryname }}</label>
             <div v-if="product.condition !== 'No Condition'" class="badge badge-ghost badge-outline">{{ this.product.condition }}</div>
           </div>
-          <label class="text-5xl text-white font-bold">{{ this.productname }}</label>
+          <label class="lg:text-5xl text-2xl text-white font-bold">{{ this.productname }}</label>
         </div>
-        <textarea class="mt-5 py-3 px-5 w-full h-full bg-transparent shadow shadow-base-content/50" :value="product.description" readonly @focus="handleFocus"></textarea>
+        <textarea class="mt-5 py-3 px-5 h-52 lg:h-40 bg-transparent shadow shadow-base-content/50" :value="product.description" readonly @focus="handleFocus"></textarea>
         <label class="text-white py-6 flex gap-2"><span class="font-light pt-1">Rp</span> <span class="font-bold text-2xl">{{ this.product.price }}</span></label>
         <div class="justify-start flex">
           <button onclick="window.location.href='https://wa.me/6281334193457'" class="btn bg-success/100 hover:shadow-success shadow-inner hover:shadow-success shadow-md text-white hover:bg-success/100 hover:brightness-125 hover:contrast-125 px-5">
@@ -130,19 +162,34 @@ export default {
         <h1 class="text-base-content my-auto font-extrabold uppercase">Preview</h1>
       </div>
       <div class="flex justify-center w-full gap-5">
-        <button @click="" class="hover:-translate-y-1 hover:shadow-base-content shadow hover:rotate-6"><img width="100" src="../../../assets/bg.jpg"></button>
+        <button v-for="(image, index) in image_data" :key="index" @click="showAllImage(image.filename);" class="hover:-translate-y-1 hover:shadow-base-content shadow hover:rotate-6">
+          <img width="100" class="max-h-20" :src="`http://localhost:3000/img/${this.categoryname}/${image.filename}`">
+        </button>
       </div>
     </div>
   </div>
 
-  <dialog id="image" class="modal bg-base-content/25">
-    <div class="modal-box flex justify-center w-96 max-w5xl">
-      <div class="h-96 carousel carousel-vertical rounded-box">
-        <!-- Isi carousel item sesuai kebutuhan -->
-      </div>
+  <dialog id="image" class="modal">
+    <div class="modal-box modal-middle bg-transparent w-11/12 max-w-5xl">
+      <img class="w-full h-full" :src="this.imageurls">
     </div>
-    <form method="dialog" class="modal-backdrop">
+    <form method="dialog" class="modal-backdrop bg-black">
       <button>close</button>
+    </form>
+  </dialog>
+
+  <dialog id="images" class="modal">
+    <div class="modal-box modal-middle bg-transparent -mt-72 lg:mt-0 w-full px-0 lg:w-11/12 lg:max-w-5xl">
+      <img class="w-full h-full" :src="currentImage" alt="Slide">
+    </div>
+    <button @click="prevSlide" class="absolute left-4 md:left-24 top-80 lg:top-1/2 transform -translate-y-1/2 bg-white px-4 pt-1 pb-2 lg:px-6 lg:pt-2 lg:pb-3 rounded-full text-black">
+      &lt;
+    </button>
+    <button @click="nextSlide" class="absolute right-4 md:right-24 top-80 lg:top-1/2 transform -translate-y-1/2 bg-white px-4 pt-1 pb-2 lg:px-6 lg:pt-2 lg:pb-3 rounded-full text-black">
+      &gt;
+    </button>
+    <form method="dialog" class="modal-backdrop bg-black">
+      <button @click="closeModal">Close</button>
     </form>
   </dialog>
 </template>
@@ -158,8 +205,6 @@ export default {
 }
 
 textarea {
-  width: 40rem;
-  height: 10rem;
   border: none;
   transition: border 0.3s;
 }

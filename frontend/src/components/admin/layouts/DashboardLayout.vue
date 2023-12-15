@@ -1,10 +1,11 @@
 <script>
 import axios from "axios";
 import Config from "../../../config.js";
+import BarChart from "../../BarChart.vue";
 
 export default {
   name: "Dashboard",
-
+  components: {BarChart},
   data() {
     return {
       totalProduct: '',
@@ -96,6 +97,8 @@ export default {
           <label class="font-bold text-white uppercase">Product Yearly Sales</label>
         </div>
         <div class="flex h-80 bg-base-content/20">
+          <div class="mx-3 my-3">
+          </div>
         </div>
       </div>
     </div>
@@ -119,6 +122,24 @@ div {
 
 .dashboardlayout {
   border-radius: 0rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 91.666667%;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.chart-container {
+  background-color: #eee8d5;
+  border-radius: 0.5rem;
 }
 
 </style>

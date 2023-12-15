@@ -14,7 +14,7 @@ const Config = {
     POST_ADD_PRODUCT: "http://localhost:3000/api/dashboard/addproduct",
 
     POST_CREATE_IMAGE_BY_PRODUCT_ID: "http://localhost:3000/api/product/img/create_image_by_product_id",
-    POST_GET_IMAGE_BY_PRODUCT_ID: "http://localhost:3000/api/product/img/create_img_by_product_id",
+    POST_GET_IMAGE_BY_PRODUCT_ID: "http://localhost:3000/api/product/img/get_image_by_product_id",
     GET_ALL_PRODUCT_DATA: "http://localhost:3000/api/product/get",
     POST_EDIT_PRODUCT: "http://localhost:3000/api/product/edit",
     POST_GET_PRODUCT_BY_ID: "http://localhost:3000/api/product/get_product_by_id",
@@ -23,10 +23,11 @@ const Config = {
     POST_CREATE_NEW_PRODUCT: "http://localhost:3000/api/product/create",
     POST_DELETE_PRODUCT: "http://localhost:3000/api/product/delete",
 
-    ROUTE_TO_PRODUCTSETUP_LAYOUT: "http://localhost:4173/admin/product/setup/",
+    ROUTE_TO_PRODUCTSETUP_LAYOUT: "http://localhost:5173/admin/product/setup/",
 
     UPLOAD_IMAGES_URL: "http://localhost:3000/api/product/upload/image",
-    SERVER_ADDRESS: "http://localhost:4173",
+    SERVER_ADDRESS: "http://localhost:5173",
+    BACKEND_ADDRESS: "http://localhost:3000",
 };
 
 export default Config;

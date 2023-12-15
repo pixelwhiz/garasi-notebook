@@ -3,7 +3,7 @@
   <div class="navbar sm:px-5 md:px-12 lg:px-24 fixed bg-black z-[1]">
     <div class="navbar-start lg:ms-3 flex gap-10 left-0">
       <div class="dropdown -me-10">
-        <button onclick="document.getElementById('navbar').showModal();" tabindex="0" class="btn btn-ghost hover:bg-base-200/100 lg:hidden">
+        <button onclick="document.getElementById('navbar').showModal();" tabindex="0" class="btn btn-ghost hover:bg-transparent lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-base-content" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </button>
       </div>
@@ -28,7 +28,7 @@
 
   <dialog id="navbar" class="modal bg-base-content/25">
     <div class="card bg-base-200 overflow-y-auto h-screen w-80 top-0 left-0 fixed">
-      <div class="mb-4 py-3 px-10 text-xl bg-base-content/5 font-extrabold text-success uppercase animate-pulse">
+      <div class="mb-4 pt-5 pb-4 px-10 text-xl bg-base-content/5 font-extrabold text-success uppercase animate-pulse">
         Garasi Notebook
       </div>
       <div class="grid mx-5 gap-1">
@@ -117,7 +117,7 @@ export default {
           },
         });
 
-        this.category_data = response.data;
+        this.category_data = response.data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).reverse();
       } catch (err) {
         console.log("Internal Server Error: ", err.message);
       }
